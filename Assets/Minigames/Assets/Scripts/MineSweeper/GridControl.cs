@@ -8,10 +8,6 @@ public class GridControl : MonoBehaviour {
     public static int h = 12;
     public static Element[,] elements = new Element[w, h];
 
-	// Use this for initialization
-	void Start () {
-		
-	}
     public static void UncoverMines()
     {
         foreach(Element element in elements)

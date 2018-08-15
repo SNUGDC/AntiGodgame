@@ -25,13 +25,13 @@ public class Element : MonoBehaviour {
         ec = GameObject.Find("Grid").GetComponent<EventControl>();
         //Random gerneration of mine
         mine = Random.value < 0.15;
+        x = (int)transform.position.x;
+        y = (int)transform.position.y;
+        GridControl.elements[x, y] = this;
         if (mine)
         {
             ec.MineCountUp();
         }
-        x = (int)transform.position.x;
-        y = (int)transform.position.y;
-        GridControl.elements[x, y] = this;
 	}
 
     // Update is called once per frame

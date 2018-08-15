@@ -46,14 +46,12 @@ public class ClickerEventControl : MonoBehaviour {
     private void OnGameEnd()
     {
         //TODO: Do something on game end
-        //Deactivate Button
         Button btn = GameObject.Find("CtrlButton").GetComponent<Button>();
         btn.enabled = false;
     }
 
     public void ModifyCount(int mdfy)
     {
-        print("count up by " + mdfy.ToString());
         count += mdfy;
     }
 }

@@ -6,20 +6,24 @@ using UnityEngine.UI;
 public class EventControl : MonoBehaviour {
 
     public int maxMineCount, badBound, normalBound, goodBound;
-    public bool gameEnd = false;
+    public float timerStart;
+
+    public static Element[,] mineElements;
     public Text timerText;
     public Text bugCountText;
-    public GameObject result;
-    public Image fade;
 
     private Element[,] elements;
-    private Element elem;
     private int mineCount = 0;
     private int bugCount = 0;
-    private float timer = 30.0f;
+    private float timer;
+    private bool gameEnd = false;
+
+    private GameObject endObject;
 
 	// Use this for initialization
 	void Start () {
+        timer = timerStart;
+        endObject = GameObject.Find("GameEnd");
         elements = GridControl.elements;
         if(mineCount != maxMineCount)
         {
@@ -27,18 +31,9 @@ public class EventControl : MonoBehaviour {
         }
 	}
 
-    public void MineCountUp()
-    {
-        mineCount++;
-    }
-
-    public void MineCountDown()
-    {
-        mineCount--;
-    }
-
     private void ModifyMineCount()
     {
+        Element elem;
         if (mineCount > maxMineCount)
         {
             elem = elements[Random.Range(0, GridControl.w), Random.Range(0, GridControl.h)];
@@ -57,6 +52,16 @@ public class EventControl : MonoBehaviour {
             MineCountUp();
             ModifyMineCount();
         }
+    }
+
+    public void MineCountDown()
+    {
+        mineCount--;
+    }
+
+    public void MineCountUp()
+    {
+        mineCount++;
     }
 
     // Update is called once per frame
@@ -80,7 +85,8 @@ public class EventControl : MonoBehaviour {
 
     private void OnGameEnd()
     {
-        Text resultText = result.gameObject.GetComponentInChildren<Text>();
+
+        Text resultText = endObject.transform.Find("Result").gameObject.GetComponentInChildren<Text>();
         GridControl.UncoverMines();
         if (bugCount > 0 && bugCount <= badBound)
         {
@@ -98,8 +104,7 @@ public class EventControl : MonoBehaviour {
         {
             resultText.text = "OVER";
         }
-        fade.gameObject.SetActive(true);
-        result.gameObject.SetActive(true);
+        endObject.SetActive(true);
     }
 
     public void TimerModify(float time)
@@ -110,11 +115,6 @@ public class EventControl : MonoBehaviour {
     public float GetTimer()
     {
         return timer;
-    }
-
-    private void EndOfTimer()
-    {
-        print("Time Over!");
     }
 
     public void BugCountUp()
