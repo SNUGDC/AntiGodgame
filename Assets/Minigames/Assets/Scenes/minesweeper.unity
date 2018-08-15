@@ -1296,7 +1296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &202449394
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4921,7 +4921,7 @@ MonoBehaviour:
   badBound: 2
   normalBound: 6
   goodBound: 11
-  timerStart: 0
+  timerStart: 30
   timerText: {fileID: 2043294204}
   bugCountText: {fileID: 646445955}
 --- !u!1001 &918102173

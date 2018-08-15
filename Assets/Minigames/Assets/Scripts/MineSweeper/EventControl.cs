@@ -24,6 +24,7 @@ public class EventControl : MonoBehaviour {
 	void Start () {
         timer = timerStart;
         endObject = GameObject.Find("GameEnd");
+        endObject.SetActive(false);
         elements = GridControl.elements;
         if(mineCount != maxMineCount)
         {
