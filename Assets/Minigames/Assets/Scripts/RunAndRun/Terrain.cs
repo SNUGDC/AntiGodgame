@@ -5,11 +5,35 @@ using UnityEngine;
 public class Terrain : MonoBehaviour {
 
     public float moveSpeed;
-
+    public float xDestroyBoundary;
+    public float probSpawn, probStaticOrReactive;
+    public GameObject[] obstacle;
+    
 	// Use this for initialization
 	void Start () {
-		
+        InstantiateObstacle();
 	}
+
+    private void InstantiateObstacle()
+    {
+        float randomFactor = Random.Range(0, 10.0f);
+        if (randomFactor < probSpawn)
+        {
+            float randomFactor2 = Random.Range(0, 10.0f);
+            GameObject spawnedObstacle;
+            if (randomFactor2 < probStaticOrReactive)
+            {
+                spawnedObstacle = Instantiate(obstacle[0], gameObject.transform.position, Quaternion.identity);
+            }
+            else
+            {
+                spawnedObstacle = Instantiate(obstacle[1], gameObject.transform.position, Quaternion.identity);
+            }
+            spawnedObstacle.transform.parent = gameObject.transform;
+            spawnedObstacle.transform.localPosition = new Vector3(0.0f, 4.5f, 0.0f);
+            print(spawnedObstacle.name + "is spawned under " + gameObject.name);
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -17,7 +41,7 @@ public class Terrain : MonoBehaviour {
         {
             Move();
         }
-        if(transform.position.x < -15.0f)
+        if(transform.position.x < xDestroyBoundary)
         {
             Destroy(gameObject);
         }
@@ -26,13 +50,5 @@ public class Terrain : MonoBehaviour {
     private void Move()
     {
         transform.position += new Vector3(1.0f, 0, 0) * moveSpeed;
-    }
-    
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.transform.CompareTag("Boundary"))
-        {
-            Destroy(gameObject);
-        }
     }
 }

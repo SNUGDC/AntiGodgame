@@ -5,50 +5,51 @@ using UnityEngine;
 public class Character : MonoBehaviour {
 
     public float moveSpeed;
-    public float jumpFactor;
+
+    public bool isHit = false;
+    public bool isInvincible = false;
 
     private Rigidbody2D rb;
-    private bool isOnGround = true;
+    private GameControl gc;
+    private SpriteRenderer sr;
+
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
-	}
+        gc = GameObject.Find("GameControl").GetComponent<GameControl>();
+        sr = transform.Find("Sprite").GetComponent<SpriteRenderer>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
         if (!GameControl.isGameEnd)
         {
-            if (isOnGround)
-            {
-                if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
-                {
-                    Jump();
-                }
-            }
             Move();
+            if (isHit && !isInvincible)
+            {
+                isHit = false;
+                StartCoroutine("TemporaryInvincibility");
+            }
         }
 	}
-
-    private void Jump()
-    {
-        isOnGround = false;
-        rb.velocity = new Vector2(0, 1.0f) * jumpFactor;
-    }
 
     private void Move()
     {
         transform.position += new Vector3(Input.GetAxis("Horizontal"), 0, 0) * moveSpeed;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    IEnumerator TemporaryInvincibility()
     {
-        if (collision.transform.CompareTag("Enemy"))
-        {
-            //Decrease timer
-        }
-        else if (collision.transform.CompareTag("Ground"))
-        {
-            isOnGround = true;
-        }
+        isInvincible = true;
+        Color originalColor = sr.color;
+        sr.color = Color.white;
+        yield return new WaitForSecondsRealtime(1.0f);
+        isInvincible = false;
+        sr.color = originalColor;
+    }
+
+    public bool GetIsInvincible()
+    {
+        return isInvincible;
     }
 }
