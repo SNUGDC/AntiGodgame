@@ -8,12 +8,8 @@ public class GameControl : MonoBehaviour {
     public static bool isGameEnd = false;
 
     public float timerStart;
-    public float runSpeedByMeterPerSec;
     public GameObject terrain;
     public Vector3 terrainSpawnPoint;
-    public Text debugText;
-    public Text timerText;
-    public Text runMeterText;
 
     private float timer;
     private float spawnedTerrainHeight;
@@ -30,13 +26,10 @@ public class GameControl : MonoBehaviour {
 
     private void Update()
     {
-        debugText.text = Time.time.ToString();
-        timerText.text = "TIMER: " + timer.ToString("N2");
 
         if(timer > 0)
         {
             timer -= Time.deltaTime;
-            runMeterText.text = "RUN: " + (Time.time * runSpeedByMeterPerSec).ToString("N2") + "m";
         }
         else 
         {
@@ -60,6 +53,10 @@ public class GameControl : MonoBehaviour {
         Instantiate(terrain, new Vector3(terrainSpawnPoint.x, spawnedTerrainHeight, 0), Quaternion.identity).transform.parent = terrainParent.transform;
     }
 
+    public float GetTimer()
+    {
+        return timer;
+    }
     public void ModifyTimer(float time)
     {
         timer += time;

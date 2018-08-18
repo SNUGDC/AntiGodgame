@@ -10,16 +10,19 @@ public class CharacterPhysics : MonoBehaviour {
     private Rigidbody2D rb;
     private Character character;
     private GameControl gc;
+    private Quaternion startQuat;
 
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
         character = transform.parent.GetComponent<Character>();
         gc = GameObject.Find("GameControl").GetComponent<GameControl>();
+        startQuat = transform.rotation;
     }
 	
 	// Update is called once per frame
 	void Update () {
+        transform.rotation = startQuat;
         if (!GameControl.isGameEnd)
         {
             if (isOnGround)

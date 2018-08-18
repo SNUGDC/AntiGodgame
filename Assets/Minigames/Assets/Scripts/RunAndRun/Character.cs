@@ -40,8 +40,9 @@ public class Character : MonoBehaviour {
 
     IEnumerator TemporaryInvincibility()
     {
-        isInvincible = true;
         Color originalColor = sr.color;
+
+        isInvincible = true;
         sr.color = Color.white;
         yield return new WaitForSecondsRealtime(1.0f);
         isInvincible = false;
