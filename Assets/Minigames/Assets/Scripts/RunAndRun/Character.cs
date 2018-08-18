@@ -24,7 +24,6 @@ public class Character : MonoBehaviour {
 	void Update () {
         if (!GameControl.isGameEnd)
         {
-            Move();
             if (isHit && !isInvincible)
             {
                 isHit = false;
@@ -32,11 +31,6 @@ public class Character : MonoBehaviour {
             }
         }
 	}
-
-    private void Move()
-    {
-        transform.position += new Vector3(Input.GetAxis("Horizontal"), 0, 0) * moveSpeed;
-    }
 
     IEnumerator TemporaryInvincibility()
     {
