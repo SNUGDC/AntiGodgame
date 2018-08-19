@@ -15,20 +15,19 @@ public class GameControl : MonoBehaviour {
     private float timer;
     private float spawnedTerrainHeight;
     private float previousSpawnedTerrainHeight = -5.0f;
-    private int oldTime;
-    private int newTime;
+    private int frames = 0;
+    private int spawningFrame;
     private GameObject terrainParent;
 
     private void Start()
     {
         timer = timerStart;
-        oldTime = (int)Time.time;
         terrainParent = GameObject.Find("Terrains");
+        spawningFrame = (int)(1 * -0.08f / TerrainControl.moveSpeed/ Time.deltaTime);
     }
 
     private void Update()
     {
-
         if(timer > 0)
         {
             timer -= Time.deltaTime;
@@ -40,12 +39,20 @@ public class GameControl : MonoBehaviour {
         }
         if (!isGameEnd)
         {
-            newTime = (int)Time.time;
-            if (oldTime != newTime)
-            {
-                oldTime = newTime;
-                SpawnTerrain();
-            }
+            SpawnTerrainWithTimeInterval();
+        }
+    }
+
+    private void SpawnTerrainWithTimeInterval()
+    {
+        if(frames != spawningFrame)
+        {
+            frames++;
+        }
+        else
+        {
+            frames = 0;
+            SpawnTerrain();
         }
     }
 

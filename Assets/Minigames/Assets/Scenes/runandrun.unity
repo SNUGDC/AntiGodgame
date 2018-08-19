@@ -342,6 +342,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114968701288598282, guid: 160e313b8efcb5345a50ded1b34ab1eb,
+        type: 2}
+      propertyPath: spawnObstacle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214279382171772, guid: 160e313b8efcb5345a50ded1b34ab1eb, type: 2}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 160e313b8efcb5345a50ded1b34ab1eb, type: 2}
   m_IsPrefabAsset: 0
@@ -681,6 +690,11 @@ Prefab:
       propertyPath: m_Name
       value: Terrain (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114968701288598282, guid: 160e313b8efcb5345a50ded1b34ab1eb,
+        type: 2}
+      propertyPath: spawnObstacle
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 160e313b8efcb5345a50ded1b34ab1eb, type: 2}
   m_IsPrefabAsset: 0
@@ -726,6 +740,11 @@ Prefab:
     - target: {fileID: 1214279382171772, guid: 160e313b8efcb5345a50ded1b34ab1eb, type: 2}
       propertyPath: m_Name
       value: Terrain (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114968701288598282, guid: 160e313b8efcb5345a50ded1b34ab1eb,
+        type: 2}
+      propertyPath: spawnObstacle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 160e313b8efcb5345a50ded1b34ab1eb, type: 2}
@@ -778,6 +797,11 @@ Prefab:
       propertyPath: m_Name
       value: Terrain (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114968701288598282, guid: 160e313b8efcb5345a50ded1b34ab1eb,
+        type: 2}
+      propertyPath: spawnObstacle
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 160e313b8efcb5345a50ded1b34ab1eb, type: 2}
   m_IsPrefabAsset: 0
@@ -810,7 +834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerStart: 30
-  heightDelta: 3
+  heightDelta: 2
   terrain: {fileID: 1214279382171772, guid: 160e313b8efcb5345a50ded1b34ab1eb, type: 2}
   terrainSpawnPoint: {x: 16, y: 0, z: 0}
 --- !u!4 &1467227059
@@ -1094,6 +1118,41 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114662448175473518, guid: a51c92fe96e4f1c48834e4a4e75b7272,
+        type: 2}
+      propertyPath: jumpFactor
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 50015345493607910, guid: a51c92fe96e4f1c48834e4a4e75b7272,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 58738333919145968, guid: a51c92fe96e4f1c48834e4a4e75b7272,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114741703782260784, guid: a51c92fe96e4f1c48834e4a4e75b7272,
+        type: 2}
+      propertyPath: moveSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50015345493607910, guid: a51c92fe96e4f1c48834e4a4e75b7272,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 50015345493607910, guid: a51c92fe96e4f1c48834e4a4e75b7272,
+        type: 2}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58738333919145968, guid: a51c92fe96e4f1c48834e4a4e75b7272,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a51c92fe96e4f1c48834e4a4e75b7272, type: 2}
   m_IsPrefabAsset: 0
@@ -1139,6 +1198,11 @@ Prefab:
     - target: {fileID: 1214279382171772, guid: 160e313b8efcb5345a50ded1b34ab1eb, type: 2}
       propertyPath: m_Name
       value: Terrain (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114968701288598282, guid: 160e313b8efcb5345a50ded1b34ab1eb,
+        type: 2}
+      propertyPath: spawnObstacle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 160e313b8efcb5345a50ded1b34ab1eb, type: 2}

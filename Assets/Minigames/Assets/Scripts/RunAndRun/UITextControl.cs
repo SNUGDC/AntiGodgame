@@ -18,12 +18,15 @@ public class UITextControl : MonoBehaviour {
     private Character ch;
     private float timer;
     private bool isCreatedText = false;
+    private RectTransform canvasRect;
 
 	// Use this for initialization
 	void Start () {
         gc = GetComponent<GameControl>();
         ch = GameObject.Find("Character").GetComponent<Character>();
-	}
+        canvasRect = GameObject.Find("UICanvas").GetComponent<RectTransform>();
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -49,10 +52,19 @@ public class UITextControl : MonoBehaviour {
         }
     }
 
-    private void InstantiateText()
+    public void InstantiateText()
     {
         isCreatedText = true;
         Instantiate(timerDecreaseText, new Vector3(timerText.transform.position.x - 20.0f, timerText.transform.position.y, 0.0f), Quaternion.identity).rectTransform.SetParent(GameObject.Find("UICanvas").transform);
-        Instantiate(onHitText, new Vector3(440.0f, 190.0f, 0.0f), Quaternion.identity).transform.SetParent(GameObject.Find("UICanvas").transform);
+        Instantiate(onHitText, canvasRect.rect.center +  new Vector2(765.0f, 322.0f), Quaternion.identity).transform.SetParent(GameObject.Find("UICanvas").transform);
+    }
+
+    public bool GetIsCreatedText()
+    {
+        return isCreatedText;
+    }
+    public void SetIsCreatedText(bool setBool)
+    {
+        isCreatedText = setBool;
     }
 }

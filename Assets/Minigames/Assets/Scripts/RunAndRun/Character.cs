@@ -9,14 +9,12 @@ public class Character : MonoBehaviour {
     public bool isHit = false;
     public bool isInvincible = false;
 
-    private Rigidbody2D rb;
-    private GameControl gc;
+    private UITextControl utc;
     private SpriteRenderer sr;
 
 	// Use this for initialization
 	void Start () {
-        rb = GetComponent<Rigidbody2D>();
-        gc = GameObject.Find("GameControl").GetComponent<GameControl>();
+        utc = GameObject.Find("GameControl").GetComponent<UITextControl>();
         sr = transform.Find("Sprite").GetComponent<SpriteRenderer>();
     }
 	
@@ -24,14 +22,29 @@ public class Character : MonoBehaviour {
 	void Update () {
         if (!GameControl.isGameEnd)
         {
+            Move();
             if (isHit && !isInvincible)
             {
-                isHit = false;
-                StartCoroutine("TemporaryInvincibility");
+                OnCharacterHit();
             }
         }
 	}
 
+    private void Move()
+    {
+        transform.position += new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f) * moveSpeed;
+    }
+
+    private void OnCharacterHit()
+    {
+        isHit = false;
+        if (!utc.GetIsCreatedText())
+        {
+            utc.InstantiateText();
+            utc.SetIsCreatedText(true);
+        }
+        StartCoroutine("TemporaryInvincibility");
+    }
     IEnumerator TemporaryInvincibility()
     {
         Color originalColor = sr.color;

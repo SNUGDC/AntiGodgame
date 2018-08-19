@@ -5,8 +5,8 @@ using UnityEngine;
 public class CharacterPhysics : MonoBehaviour {
 
     public float jumpFactor;
+    public bool isOnGround = false;
 
-    private bool isOnGround = false;
     private Rigidbody2D rb;
     private Character character;
     private GameControl gc;
@@ -49,9 +49,21 @@ public class CharacterPhysics : MonoBehaviour {
             gc.ModifyTimer(-1.0f);
             character.isHit = true;
         }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
         if (collision.transform.CompareTag("Ground") || collision.transform.CompareTag("Enemy"))
         {
             isOnGround = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.transform.CompareTag("Ground") || collision.transform.CompareTag("Enemy"))
+        {
+            isOnGround = false;
         }
     }
 }
