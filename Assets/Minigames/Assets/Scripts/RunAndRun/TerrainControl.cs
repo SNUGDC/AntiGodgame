@@ -12,16 +12,23 @@ public class TerrainControl : MonoBehaviour {
     public GameObject[] obstacle;
 
     private GameObject character;
-    private Rigidbody2D rb;
-    
-	// Use this for initialization
-	void Start () {
-        character = GameObject.FindWithTag("Character");
-        rb = GetComponent<Rigidbody2D>();
+    private GameObject characterSprite;
+    private Character ch;
+    private GameControl gc;
+    private Collider2D c2;
+
+    // Use this for initialization
+    void Start () {
+        character = GameObject.Find("Character");
+        characterSprite = character.transform.Find("Sprite").gameObject;
+        ch = character.GetComponent<Character>();
+        gc = GameObject.Find("GameControl").GetComponent<GameControl>();
+        c2 = transform.Find("CollideBox").GetComponent<Collider2D>();
         if (spawnObstacle)
         {
             InstantiateObstacle();
         }
+        gc.AddElementOnSpawnedList(gameObject);
 	}
 
     private void InstantiateObstacle()
@@ -49,10 +56,22 @@ public class TerrainControl : MonoBehaviour {
 	void Update () {
         if (!GameControl.isGameEnd)
         {
-            Move();
+            if (gc.GetIsTerrainMoveAvailable())
+            {
+                Move();
+            }
         }
-        if(transform.position.x < xDestroyBoundary + character.transform.position.x)
+        if(transform.position.y + c2.bounds.size.y/2 > characterSprite.transform.position.y - 0.9f && transform.position.y - c2.bounds.size.y/2 < characterSprite.transform.position.y + 0.9f)
         {
+            if (transform.position.x - c2.bounds.size.x / 2 < characterSprite.transform.position.x + 0.9f && transform.position.x - c2.bounds.size.x/2 > characterSprite.transform.position.x -0.9f)
+            {
+                gc.SetIsTerrainOverlapped(true);
+                gc.SetOverlapDistance((characterSprite.transform.position.x + 0.9f) - (transform.position.x - c2.bounds.size.x / 2));
+            }
+        }
+        if(transform.position.x < xDestroyBoundary + characterSprite.transform.position.x)
+        {
+            gc.DeleteElementOnSpawnedList(gameObject);
             Destroy(gameObject);
         }
 	}

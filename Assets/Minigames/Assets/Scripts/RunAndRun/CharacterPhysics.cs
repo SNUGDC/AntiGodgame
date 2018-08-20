@@ -11,6 +11,8 @@ public class CharacterPhysics : MonoBehaviour {
     private Character character;
     private GameControl gc;
     private Quaternion startQuat;
+    private GameObject collidedTerrain;
+    private bool isHeadingTerrain = false;
 
 	// Use this for initialization
 	void Start () {
@@ -32,6 +34,10 @@ public class CharacterPhysics : MonoBehaviour {
                     Jump();
                 }
             }
+            if (collidedTerrain != null && transform.position.y > collidedTerrain.transform.position.y + 5.0f)
+            {
+                gc.SetIsTerrainMoveAvailable(true);
+            }
         }
 	}
 
@@ -43,11 +49,15 @@ public class CharacterPhysics : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.CompareTag("Enemy") && !character.GetIsInvincible())
+        if (collision.transform.CompareTag("Enemy"))
         {
-            print("is Hit");
-            gc.ModifyTimer(-1.0f);
-            character.isHit = true;
+            collidedTerrain = collision.gameObject;
+            if (!character.GetIsInvincible())
+            {
+                print("is Hit");
+                gc.ModifyTimer(-1.0f);
+                character.isHit = true;
+            }
         }
     }
 
@@ -64,6 +74,12 @@ public class CharacterPhysics : MonoBehaviour {
         if(collision.transform.CompareTag("Ground") || collision.transform.CompareTag("Enemy"))
         {
             isOnGround = false;
+            collidedTerrain = null;
         }
+    }
+
+    public void SetIsHeadingTerrain(bool b)
+    {
+        isHeadingTerrain = b;
     }
 }

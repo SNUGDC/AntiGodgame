@@ -18,7 +18,19 @@ public class GameControl : MonoBehaviour {
     private int frames = 0;
     private int spawningFrame;
     private GameObject terrainParent;
+    private List<GameObject> spawnedList;
+    private bool isTerrainMoveAvailable = true;
+    private bool isTerrainOverlapped = false;
+    private float overlapDistance;
 
+    private void Awake()
+    {
+        spawnedList = new List<GameObject>();
+        foreach (Transform child in transform)
+        {
+            spawnedList.Add(child.gameObject);
+        }
+    }
     private void Start()
     {
         timer = timerStart;
@@ -31,6 +43,16 @@ public class GameControl : MonoBehaviour {
         if(timer > 0)
         {
             timer -= Time.deltaTime;
+            if (isTerrainOverlapped)
+            {
+                foreach(GameObject terrain in spawnedList)
+                {
+                    terrain.transform.position += new Vector3(overlapDistance, 0.0f, 0.0f);
+                }
+                terrainSpawnPoint += new Vector3(overlapDistance, 0.0f, 0.0f);
+                overlapDistance = 0.0f;
+                isTerrainOverlapped = false;
+            }
         }
         else 
         {
@@ -70,5 +92,37 @@ public class GameControl : MonoBehaviour {
     public void ModifyTimer(float time)
     {
         timer += time;
+    }
+    public bool GetIsTerrainMoveAvailable()
+    {
+        return isTerrainMoveAvailable;
+    }
+    public void SetIsTerrainMoveAvailable(bool b)
+    {
+        isTerrainMoveAvailable = b;
+    }
+    public bool GetIsTerrainOverlapped()
+    {
+        return isTerrainOverlapped;
+    }
+    public void SetIsTerrainOverlapped(bool b)
+    {
+        isTerrainOverlapped = b;
+    }
+    public float GetOverlapDistance()
+    {
+        return overlapDistance;
+    }
+    public void SetOverlapDistance(float f)
+    {
+        overlapDistance = f;
+    }
+    public void AddElementOnSpawnedList(GameObject item)
+    {
+        spawnedList.Add(item);
+    }
+    public void DeleteElementOnSpawnedList(GameObject item)
+    {
+        spawnedList.Remove(item);
     }
 }
