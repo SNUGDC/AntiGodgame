@@ -1,0 +1,1918 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9856eecfcd6b8df42ac2ebd73cc36dff, type: 3}
+  m_Name: Dialogue.book
+  m_EditorClassIdentifier: 
+  importVersion: 0
+  importGridList:
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uB611\uB611)"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uACC4\uC138\uC694?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uB07C\uC775)"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uBB38\uC774 \uC5F4\uB838\uB2E4."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5B4\uC81C\uC758 \uADF8 \uC2E0\uC785? \uB4E4\uC5B4\uC640."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uD558\uC218\uB294 \uB2A6\uB294\uB300. \uC5C5\uBB34 \uC18C\uAC1C\uB294 \uB0B4\uAC00
+        \uB9E1\uC9C0. \uD2B9\uBCC4\uD788 \uD574\uBCF4\uACE0 \uC2F6\uC740 \uAC74?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5B4, \uC74C... \uC544\uC9C1 \uC544\uB294 \uAC8C \uC5C6\uC5B4\uC11C \uB2E4
+        \uC870\uAE08\uC529 \uBC30\uC6CC\uBCF4\uB824\uAD6C\uC694."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC88B\uC740 \uC790\uC138\uB124. \uADF8\uB7FC \uC77C\uB2E8 \uAE30\uD68D \uC5C5\uBB34\uBD80\uD130."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5C5\uBB34\uB77C\uACE0 \uD574\uBD10\uC57C \uD558\uC218\uB791 \uAE30\uD68D\uC744
+        \uAD6C\uCCB4\uD654\uC2DC\uD0A4\uACE0 \uCEE8\uD150\uCE20\uB97C \uCD94\uAC00\uD558\uB294
+        \uC77C \uC815\uB3C4\uC57C."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uD558\uC218\uAC00 \uD5DB\uC18C\uB9AC\uB97C \uD558\uB294 \uACBD\uC6B0\uAC00
+        \uC790\uC8FC \uC788\uB294\uB370, \uADF8\uB54C\uB9C8\uB2E4 \uC815\uC2E0\uC904\uC744
+        \uBD99\uB4E4\uC5B4\uB9E4\uACE0 \uD558\uC218\uB97C \uB9D0\uB9AC\uB294 \uC5ED\uD560
+        \uC815\uB3C4\uAC00 \uCD94\uAC00\uB85C \uC694\uAD6C\uB418\uACA0\uB124."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 11
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC9C8\uBB38?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 12
+      debugIndex: 12
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5B4... \uC74C... \uD5DB\uC18C\uB9AC\uB97C \uD558\uACE0 \uC788\uB2E4\uB294
+        \uAC78 \uC5B4\uB5BB\uAC8C \uC54C\uC8E0?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 13
+      debugIndex: 13
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB300\uD654\uAC00 \uC0B0\uC73C\uB85C \uAC00\uBA74 \uD5DB\uC18C\uB9AC\uC778
+        \uAC70\uC9C0."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 14
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544, \uB124."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 15
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB2E4\uC74C\uC740 \uD504\uB85C\uADF8\uB798\uBC0D \uC791\uC5C5\uC774\uC57C.
+        \uCF54\uB529\uD560 \uC904 \uC548\uB2E4\uACE0 \uD588\uB098?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB124, \uC870\uAE08\uC740 \uB2E4\uB8F0 \uC904 \uC54C\uC544\uC694."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5D4\uC9C4\uC740?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5D4\uC9C4\uC740 \uB2E4\uB904\uBCF8 \uC801\uC774 \uC5C6\uC5B4\uC694."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 19
+      debugIndex: 19
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC88B\uC544, \uADF8\uB7FC \uB514\uBC84\uAE45 \uCABD\uC744 \uB9E1\uAE38\uAC8C.
+        \uCF54\uB4DC\uB97C \uBCF4\uACE0 \uBC84\uADF8\uAC00 \uC788\uB294\uC9C0 \uCC3E\uC73C\uBA74
+        \uB418\uB294 \uAC04\uB2E8\uD55C \uC5C5\uBB34\uC57C."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 20
+      debugIndex: 20
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uC804\uD600 \uAC04\uB2E8\uD55C \uC77C\uC774 \uC544\uB2CC \uAC83 \uAC19\uC740\uB370...)"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 21
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB514\uBC84\uAE45\uB3C4 \uB0B4\uAC00 \uD558\uB294 \uAC8C \uB9DE\uAE34 \uD55C\uB370,
+        \uB098\uB294 \uB2E4\uB978 \uC560\uB4E4 \uB4B7\uCC98\uB9AC\uB3C4 \uBC14\uBE60\uC11C,
+        \uC77C\uB2E8 \uB3CC\uC544\uAC00\uAC8C\uB9CC\uC774\uB77C\uB3C4 \uC9DC\uB450\uACE0
+        \uC788\uC5B4..."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 22
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uAC80\uC218\uAE4C\uC9C0 \uC9C1\uC811 \uD574\uC57C \uD558\uB294 \uAC74\uB370,
+        \uB2E4\uB978 \uC0AC\uB78C\uC5D0\uAC8C \uB9E1\uAE30\uB824\uB2C8 \uBD80\uB044\uB7FD\uB124."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 23
+      debugIndex: 23
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5F4\uC2EC\uD788 \uD560\uAC8C\uC694!"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 24
+      debugIndex: 24
+      strings:
+      - 
+      - "\uC774\uC218\uBD09"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC751, \uACE0\uB9C8\uC6CC. \uB2E4\uC74C\uC740 \uADF8\uB798\uD53D \uC791\uC5C5\uC774\uC57C.
+        \uC218\uBD09\uC544, \uC880 \uC124\uBA85\uD574\uC904\uB798?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 25
+      debugIndex: 25
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC77C\uB7EC\uC2A4\uD2B8 \uD234 \uC368\uBCF8 \uC801 \uC788\uB2C8?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 26
+      debugIndex: 26
+      strings:
+      - 
+      - "\uC774\uC218\uBD09"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544, \uC544\uB1E8. \uADF8\uB9BC\uC740 \uBABB \uADF8\uB824\uC694..."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 27
+      debugIndex: 27
+      strings:
+      - 
+      - "\uC774\uC218\uBD09"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uD760, \uADF8\uB7EC\uBA74 \uADF8\uB0E5 \uAC80\uC0C9\uC774\uB77C\uB3C4 \uB3C4\uC640\uC904\uB798?
+        \uAE30\uD68D \uCABD\uC5D0\uC11C \uB9AC\uC18C\uC2A4 \uBA85\uC138\uAC00 \uB118\uC5B4
+        \uC624\uBA74 \uB9AC\uD130\uCE6D\uD560 \uC0AC\uC9C4 \uBAA9\uB85D\uC744 \uC904\uAC8C."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 28
+      debugIndex: 28
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uADF8\uAC78 \uAC80\uC0C9\uD574\uC11C \uCC3E\uC544\uC8FC\uBA74 \uB3FC. \uC800\uC791\uAD8C
+        \uBB38\uC81C \uC5C6\uB294 \uC0AC\uC9C4\uC73C\uB85C \uBD80\uD0C1\uD560\uAC8C."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 29
+      debugIndex: 29
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB124, \uC54C\uACA0\uC2B5\uB2C8\uB2E4. \uAC80\uC0C9\uC740 \uD560 \uC218
+        \uC788\uC744 \uAC70 \uAC19\uC544\uC694."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 30
+      debugIndex: 30
+      strings:
+      - 
+      - "\uC774\uACE0\uB974"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uBB38\uC774 \uBC8C\uCEE5 \uC5F4\uB9B0\uB2E4.)"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 31
+      debugIndex: 31
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC624\uC6B0! \uC99D\uAE30\uC120 \uCE5C\uAD6C! \uBC18\uAC00\uC6CC\uC694!"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 32
+      debugIndex: 32
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC7A5. \uAE30. \uC120. \uC785\uB2C8\uB2E4."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 33
+      debugIndex: 33
+      strings:
+      - 
+      - "\uC774\uACE0\uB974"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC774\uACE0\uB974, \uC2E0\uC785\uD55C\uD14C \uBD80\uD0C1\uD560 \uC77C \uC788\uC5B4?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 34
+      debugIndex: 34
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5C4... \uAE00\uC384? \uC99D\uAE30\uC120 \uCE5C\uAD6C \uD53C\uC544\uB178
+        \uCE60 \uC904 \uC54C\uC544\uC694?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 35
+      debugIndex: 35
+      strings:
+      - 
+      - "\uC774\uACE0\uB974"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uBC14\uC774\uC5D8\uAE4C\uC9C0\uC694."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 36
+      debugIndex: 36
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uBC14\uC774\uC5D8? \uBB54\uC9C0 \uBAA8\uB974\uAC8C\uC368! \uB2F9\uC7A5\uC740
+        \uBAA8\uB974\uAC8C\uC4F0\uB2C8\uAE4C \uC0DD\uAC01\uB098\uBA74 \uBD80\uD0C1\uD560\uAC8C\uC694\uC6B0!"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 37
+      debugIndex: 37
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC774\uACE0\uB974\uB294 \uB2F9\uBD84\uAC04\uC740 \uB9E1\uAE38 \uC77C\uC774
+        \uC5C6\uB294 \uBAA8\uC591\uC774\uB124. \uBB50, \uC0AC\uC6B4\uB4DC \uC5D4\uC9C0\uB2C8\uC5B4\uB9C1\uC740
+        \uC6B0\uB9AC\uB3C4 \uC798 \uBAA8\uB974\uB294 \uBD84\uC57C\uB77C\uC11C."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 38
+      debugIndex: 38
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC774\uACE0\uB974\uAC00 \uB3C4\uC640\uC8FC\uACE0 \uC788\uC5B4\uC11C \uB2E4\uD589\uC774\uC57C.
+        \uD6C4\uD6C4.."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 39
+      debugIndex: 39
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uBC29\uAE08 \uC6C3\uC74C\uC18C\uB9AC\uAC00 \uC2EC\uC0C1\uCE58 \uC54A\uC558\uC9C0\uB9CC,
+        \uAE30\uBD84 \uD0D3\uC774\uACA0\uC9C0? )"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 40
+      debugIndex: 40
+      strings:
+      - 
+      - "\uC774\uACE0\uB974"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC790, \uADF8\uB7FC \uC624\uB298\uC758 \uC18C\uAC1C\uB294 \uC5EC\uAE30\uAE4C\uC9C0\uC57C.
+        \uC6D0\uB798\uB294 \uD558\uC218\uAC00 \uD588\uC5B4\uC57C \uD558\uB294 \uAC74\uB370,
+        \uD558\uC218 \uC774 \uC0C8\uB07C\uB294 \uC544\uC9C1\uB3C4 \uC548 \uC624\uB124."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 41
+      debugIndex: 41
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\u0445\u0430\u0441\u0443? \uD558\uC218\uB294 \uC624\uB298 \uC548 \uC628\uB314\uC5B4\uC694!
+        \uB9F9\uC7A5\uC774 \uC544\uD504\uB300\uC694!"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 42
+      debugIndex: 42
+      strings:
+      - 
+      - "\uC774\uACE0\uB974"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC774\uACE0\uB974, \uD558\uC218\uB294 \uC0BC \uB144 \uC804\uC5D0 \uB9F9\uC7A5
+        \uC218\uC220\uC744 \uBC1B\uC558\uC5B4. \uB9F9\uC7A5\uC774 \uC5C6\uB294 \uCE5C\uAD6C\uB77C\uAD6C."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 43
+      debugIndex: 43
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uC774\uACE0\uB974\uB294 \uD63C\uB780\uC5D0 \uBE60\uC9C4 \uBAA8\uC591\uC774\uB2E4.
+        )"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 44
+      debugIndex: 44
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5B4\uCA0C\uB4E0, \uC798 \uBD80\uD0C1\uD574, \uC2E0\uC785! \uB355\uBD84\uC5D0
+        \uC77C\uC774 \uD55C\uACB0 \uC26C\uC6CC\uC9C0\uACA0\uC5B4."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 45
+      debugIndex: 45
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB2F9\uC7A5\uC740 \uAE30\uD68D\uC774 \uC5B4\uB290 \uC815\uB3C4 \uB098\uC640\uC57C
+        \uB2E4\uB978 \uD30C\uD2B8\uC5D0\uC11C\uB3C4 \uD560 \uC77C\uC774 \uC0DD\uAE38
+        \uD150\uB370, \uD558\uC218\uAC00 \uD0DC\uC5C5 \uC911\uC774\uB124."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 46
+      debugIndex: 46
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB0B4\uC77C\uC740 \uD558\uC218\uB97C \uD63C\uB0B4\uC57C \uD558\uB2C8\uAE4C
+        \uB3D9\uC544\uB9AC\uBC29\uC5D0 \uC788\uC73C\uBA74 \uAC70\uBD81\uD560 \uAC70\uC57C,
+        \uBAA8\uB808 \uC640\uC8FC\uBA74 \uC88B\uACA0\uC5B4."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 47
+      debugIndex: 47
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uC774\uB807\uAC8C \uB610 \uD558\uB8E8\uAC00 \uC9C0\uB0AC\uB2E4... \uBCF8\uACA9\uC801\uC778
+        \uD560 \uC77C\uC740 \uBAA8\uB808\uBD80\uD130\uC778\uAC00?)"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 48
+      debugIndex: 48
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Start
+    type: 1
+    textLength: 1475
+    headerRow: 0
+    entityIndexTbl: 
+    entityDataList: []
+  gridList:
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - CharacterName
+      - NameText
+      - Pattern
+      - X
+      - Y
+      - Z
+      - Pivot
+      - Scale
+      - Conditional
+      - FileName
+      - SubFileName
+      - FileType
+      - Animation
+      - RenderTexture
+      - RenderRect
+      - EyeBlink
+      - LipSynch
+      - Icon
+      - IconSubFileName
+      - IconRect
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Character
+    type: 1
+    textLength: 154
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Label
+      - Type
+      - X
+      - Y
+      - Z
+      - Pivot
+      - Scale
+      - Conditional
+      - FileName
+      - FileType
+      - SubFileName
+      - Animation
+      - RenderTexture
+      - RenderRect
+      - Thumbnail
+      - CgCategolly
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Texture
+    type: 1
+    textLength: 112
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Label
+      - FileName
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Particle
+    type: 1
+    textLength: 13
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - LayerName
+      - Type
+      - X
+      - Y
+      - Order
+      - LayerMask
+      - ScaleX
+      - ScaleY
+      - FlipX
+      - FlipY
+      - Width
+      - Height
+      - BorderLeft
+      - BorderRight
+      - BorderTop
+      - BorderBottom
+      - Align
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Layer
+    type: 1
+    textLength: 109
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Label
+      - IntervalMin
+      - IntervalMax
+      - RandomDouble
+      - Tag
+      - Name0
+      - Duration0
+      - Name1
+      - Duration1
+      - Name2
+      - Duration2
+      - Name3
+      - Duration3
+      - Name4
+      - Duration4
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:EyeBlink
+    type: 1
+    textLength: 112
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Label
+      - Type
+      - Interval
+      - Tag
+      - ScaleVoiceVolume
+      - Name0
+      - Duration0
+      - Name1
+      - Duration1
+      - Name2
+      - Duration2
+      - Name3
+      - Duration3
+      - Name4
+      - Duration4
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:LipSynch
+    type: 1
+    textLength: 106
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - '*SampleAnimation'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Time
+      - 0
+      - .5
+      - 1
+      - 1.5
+      - 2
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - X
+      - 0
+      - 
+      - 0
+      - 0
+      - 100
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - Y
+      - -50
+      - 50
+      - 0
+      - 0
+      - 0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - Angle
+      - 0
+      - 
+      - 0
+      - 0
+      - 360
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - ScaleX
+      - .2
+      - 1.2
+      - 1
+      - 1
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - ScaleY
+      - .2
+      - 1.2
+      - 1
+      - 1
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - Alpha
+      - 0
+      - 1
+      - 1
+      - 1
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Animation
+    type: 1
+    textLength: 93
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Label
+      - Title
+      - Type
+      - FileName
+      - IntroTime
+      - Volume
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Sound
+    type: 1
+    textLength: 37
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Label
+      - Type
+      - Value
+      - FileType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Param
+    type: 1
+    textLength: 22
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Name
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Type
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - FileType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:ParamTbl{}
+    type: 1
+    textLength: 16
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - ScenarioLabel
+      - Title
+      - Thumbnail
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:SceneGallery
+    type: 1
+    textLength: 27
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Key
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Localize
+    type: 1
+    textLength: 3
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Macro
+    type: 1
+    textLength: 66
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uB611\uB611)"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uACC4\uC138\uC694?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uB07C\uC775)"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uBB38\uC774 \uC5F4\uB838\uB2E4."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5B4\uC81C\uC758 \uADF8 \uC2E0\uC785? \uB4E4\uC5B4\uC640."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uD558\uC218\uB294 \uB2A6\uB294\uB300. \uC5C5\uBB34 \uC18C\uAC1C\uB294 \uB0B4\uAC00
+        \uB9E1\uC9C0. \uD2B9\uBCC4\uD788 \uD574\uBCF4\uACE0 \uC2F6\uC740 \uAC74?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5B4, \uC74C... \uC544\uC9C1 \uC544\uB294 \uAC8C \uC5C6\uC5B4\uC11C \uB2E4
+        \uC870\uAE08\uC529 \uBC30\uC6CC\uBCF4\uB824\uAD6C\uC694."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC88B\uC740 \uC790\uC138\uB124. \uADF8\uB7FC \uC77C\uB2E8 \uAE30\uD68D \uC5C5\uBB34\uBD80\uD130."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5C5\uBB34\uB77C\uACE0 \uD574\uBD10\uC57C \uD558\uC218\uB791 \uAE30\uD68D\uC744
+        \uAD6C\uCCB4\uD654\uC2DC\uD0A4\uACE0 \uCEE8\uD150\uCE20\uB97C \uCD94\uAC00\uD558\uB294
+        \uC77C \uC815\uB3C4\uC57C."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uD558\uC218\uAC00 \uD5DB\uC18C\uB9AC\uB97C \uD558\uB294 \uACBD\uC6B0\uAC00
+        \uC790\uC8FC \uC788\uB294\uB370, \uADF8\uB54C\uB9C8\uB2E4 \uC815\uC2E0\uC904\uC744
+        \uBD99\uB4E4\uC5B4\uB9E4\uACE0 \uD558\uC218\uB97C \uB9D0\uB9AC\uB294 \uC5ED\uD560
+        \uC815\uB3C4\uAC00 \uCD94\uAC00\uB85C \uC694\uAD6C\uB418\uACA0\uB124."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 11
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC9C8\uBB38?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 12
+      debugIndex: 12
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5B4... \uC74C... \uD5DB\uC18C\uB9AC\uB97C \uD558\uACE0 \uC788\uB2E4\uB294
+        \uAC78 \uC5B4\uB5BB\uAC8C \uC54C\uC8E0?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 13
+      debugIndex: 13
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB300\uD654\uAC00 \uC0B0\uC73C\uB85C \uAC00\uBA74 \uD5DB\uC18C\uB9AC\uC778
+        \uAC70\uC9C0."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 14
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544, \uB124."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 15
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB2E4\uC74C\uC740 \uD504\uB85C\uADF8\uB798\uBC0D \uC791\uC5C5\uC774\uC57C.
+        \uCF54\uB529\uD560 \uC904 \uC548\uB2E4\uACE0 \uD588\uB098?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB124, \uC870\uAE08\uC740 \uB2E4\uB8F0 \uC904 \uC54C\uC544\uC694."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5D4\uC9C4\uC740?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5D4\uC9C4\uC740 \uB2E4\uB904\uBCF8 \uC801\uC774 \uC5C6\uC5B4\uC694."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 19
+      debugIndex: 19
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC88B\uC544, \uADF8\uB7FC \uB514\uBC84\uAE45 \uCABD\uC744 \uB9E1\uAE38\uAC8C.
+        \uCF54\uB4DC\uB97C \uBCF4\uACE0 \uBC84\uADF8\uAC00 \uC788\uB294\uC9C0 \uCC3E\uC73C\uBA74
+        \uB418\uB294 \uAC04\uB2E8\uD55C \uC5C5\uBB34\uC57C."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 20
+      debugIndex: 20
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uC804\uD600 \uAC04\uB2E8\uD55C \uC77C\uC774 \uC544\uB2CC \uAC83 \uAC19\uC740\uB370...)"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 21
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB514\uBC84\uAE45\uB3C4 \uB0B4\uAC00 \uD558\uB294 \uAC8C \uB9DE\uAE34 \uD55C\uB370,
+        \uB098\uB294 \uB2E4\uB978 \uC560\uB4E4 \uB4B7\uCC98\uB9AC\uB3C4 \uBC14\uBE60\uC11C,
+        \uC77C\uB2E8 \uB3CC\uC544\uAC00\uAC8C\uB9CC\uC774\uB77C\uB3C4 \uC9DC\uB450\uACE0
+        \uC788\uC5B4..."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 22
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uAC80\uC218\uAE4C\uC9C0 \uC9C1\uC811 \uD574\uC57C \uD558\uB294 \uAC74\uB370,
+        \uB2E4\uB978 \uC0AC\uB78C\uC5D0\uAC8C \uB9E1\uAE30\uB824\uB2C8 \uBD80\uB044\uB7FD\uB124."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 23
+      debugIndex: 23
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5F4\uC2EC\uD788 \uD560\uAC8C\uC694!"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 24
+      debugIndex: 24
+      strings:
+      - 
+      - "\uC774\uC218\uBD09"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC751, \uACE0\uB9C8\uC6CC. \uB2E4\uC74C\uC740 \uADF8\uB798\uD53D \uC791\uC5C5\uC774\uC57C.
+        \uC218\uBD09\uC544, \uC880 \uC124\uBA85\uD574\uC904\uB798?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 25
+      debugIndex: 25
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC77C\uB7EC\uC2A4\uD2B8 \uD234 \uC368\uBCF8 \uC801 \uC788\uB2C8?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 26
+      debugIndex: 26
+      strings:
+      - 
+      - "\uC774\uC218\uBD09"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544, \uC544\uB1E8. \uADF8\uB9BC\uC740 \uBABB \uADF8\uB824\uC694..."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 27
+      debugIndex: 27
+      strings:
+      - 
+      - "\uC774\uC218\uBD09"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uD760, \uADF8\uB7EC\uBA74 \uADF8\uB0E5 \uAC80\uC0C9\uC774\uB77C\uB3C4 \uB3C4\uC640\uC904\uB798?
+        \uAE30\uD68D \uCABD\uC5D0\uC11C \uB9AC\uC18C\uC2A4 \uBA85\uC138\uAC00 \uB118\uC5B4
+        \uC624\uBA74 \uB9AC\uD130\uCE6D\uD560 \uC0AC\uC9C4 \uBAA9\uB85D\uC744 \uC904\uAC8C."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 28
+      debugIndex: 28
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uADF8\uAC78 \uAC80\uC0C9\uD574\uC11C \uCC3E\uC544\uC8FC\uBA74 \uB3FC. \uC800\uC791\uAD8C
+        \uBB38\uC81C \uC5C6\uB294 \uC0AC\uC9C4\uC73C\uB85C \uBD80\uD0C1\uD560\uAC8C."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 29
+      debugIndex: 29
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB124, \uC54C\uACA0\uC2B5\uB2C8\uB2E4. \uAC80\uC0C9\uC740 \uD560 \uC218
+        \uC788\uC744 \uAC70 \uAC19\uC544\uC694."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 30
+      debugIndex: 30
+      strings:
+      - 
+      - "\uC774\uACE0\uB974"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uBB38\uC774 \uBC8C\uCEE5 \uC5F4\uB9B0\uB2E4.)"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 31
+      debugIndex: 31
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC624\uC6B0! \uC99D\uAE30\uC120 \uCE5C\uAD6C! \uBC18\uAC00\uC6CC\uC694!"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 32
+      debugIndex: 32
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC7A5. \uAE30. \uC120. \uC785\uB2C8\uB2E4."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 33
+      debugIndex: 33
+      strings:
+      - 
+      - "\uC774\uACE0\uB974"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC774\uACE0\uB974, \uC2E0\uC785\uD55C\uD14C \uBD80\uD0C1\uD560 \uC77C \uC788\uC5B4?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 34
+      debugIndex: 34
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5C4... \uAE00\uC384? \uC99D\uAE30\uC120 \uCE5C\uAD6C \uD53C\uC544\uB178
+        \uCE60 \uC904 \uC54C\uC544\uC694?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 35
+      debugIndex: 35
+      strings:
+      - 
+      - "\uC774\uACE0\uB974"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uBC14\uC774\uC5D8\uAE4C\uC9C0\uC694."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 36
+      debugIndex: 36
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uBC14\uC774\uC5D8? \uBB54\uC9C0 \uBAA8\uB974\uAC8C\uC368! \uB2F9\uC7A5\uC740
+        \uBAA8\uB974\uAC8C\uC4F0\uB2C8\uAE4C \uC0DD\uAC01\uB098\uBA74 \uBD80\uD0C1\uD560\uAC8C\uC694\uC6B0!"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 37
+      debugIndex: 37
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC774\uACE0\uB974\uB294 \uB2F9\uBD84\uAC04\uC740 \uB9E1\uAE38 \uC77C\uC774
+        \uC5C6\uB294 \uBAA8\uC591\uC774\uB124. \uBB50, \uC0AC\uC6B4\uB4DC \uC5D4\uC9C0\uB2C8\uC5B4\uB9C1\uC740
+        \uC6B0\uB9AC\uB3C4 \uC798 \uBAA8\uB974\uB294 \uBD84\uC57C\uB77C\uC11C."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 38
+      debugIndex: 38
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC774\uACE0\uB974\uAC00 \uB3C4\uC640\uC8FC\uACE0 \uC788\uC5B4\uC11C \uB2E4\uD589\uC774\uC57C.
+        \uD6C4\uD6C4.."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 39
+      debugIndex: 39
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uBC29\uAE08 \uC6C3\uC74C\uC18C\uB9AC\uAC00 \uC2EC\uC0C1\uCE58 \uC54A\uC558\uC9C0\uB9CC,
+        \uAE30\uBD84 \uD0D3\uC774\uACA0\uC9C0? )"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 40
+      debugIndex: 40
+      strings:
+      - 
+      - "\uC774\uACE0\uB974"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC790, \uADF8\uB7FC \uC624\uB298\uC758 \uC18C\uAC1C\uB294 \uC5EC\uAE30\uAE4C\uC9C0\uC57C.
+        \uC6D0\uB798\uB294 \uD558\uC218\uAC00 \uD588\uC5B4\uC57C \uD558\uB294 \uAC74\uB370,
+        \uD558\uC218 \uC774 \uC0C8\uB07C\uB294 \uC544\uC9C1\uB3C4 \uC548 \uC624\uB124."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 41
+      debugIndex: 41
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\u0445\u0430\u0441\u0443? \uD558\uC218\uB294 \uC624\uB298 \uC548 \uC628\uB314\uC5B4\uC694!
+        \uB9F9\uC7A5\uC774 \uC544\uD504\uB300\uC694!"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 42
+      debugIndex: 42
+      strings:
+      - 
+      - "\uC774\uACE0\uB974"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC774\uACE0\uB974, \uD558\uC218\uB294 \uC0BC \uB144 \uC804\uC5D0 \uB9F9\uC7A5
+        \uC218\uC220\uC744 \uBC1B\uC558\uC5B4. \uB9F9\uC7A5\uC774 \uC5C6\uB294 \uCE5C\uAD6C\uB77C\uAD6C."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 43
+      debugIndex: 43
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uC774\uACE0\uB974\uB294 \uD63C\uB780\uC5D0 \uBE60\uC9C4 \uBAA8\uC591\uC774\uB2E4.
+        )"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 44
+      debugIndex: 44
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5B4\uCA0C\uB4E0, \uC798 \uBD80\uD0C1\uD574, \uC2E0\uC785! \uB355\uBD84\uC5D0
+        \uC77C\uC774 \uD55C\uACB0 \uC26C\uC6CC\uC9C0\uACA0\uC5B4."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 45
+      debugIndex: 45
+      strings:
+      - 
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB2F9\uC7A5\uC740 \uAE30\uD68D\uC774 \uC5B4\uB290 \uC815\uB3C4 \uB098\uC640\uC57C
+        \uB2E4\uB978 \uD30C\uD2B8\uC5D0\uC11C\uB3C4 \uD560 \uC77C\uC774 \uC0DD\uAE38
+        \uD150\uB370, \uD558\uC218\uAC00 \uD0DC\uC5C5 \uC911\uC774\uB124."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 46
+      debugIndex: 46
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB0B4\uC77C\uC740 \uD558\uC218\uB97C \uD63C\uB0B4\uC57C \uD558\uB2C8\uAE4C
+        \uB3D9\uC544\uB9AC\uBC29\uC5D0 \uC788\uC73C\uBA74 \uAC70\uBD81\uD560 \uAC70\uC57C,
+        \uBAA8\uB808 \uC640\uC8FC\uBA74 \uC88B\uACA0\uC5B4."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 47
+      debugIndex: 47
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uC774\uB807\uAC8C \uB610 \uD558\uB8E8\uAC00 \uC9C0\uB0AC\uB2E4... \uBCF8\uACA9\uC801\uC778
+        \uD560 \uC77C\uC740 \uBAA8\uB808\uBD80\uD130\uC778\uAC00?)"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 48
+      debugIndex: 48
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Start
+    type: 1
+    textLength: 1475
+    headerRow: 0
