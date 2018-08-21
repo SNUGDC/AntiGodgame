@@ -8,6 +8,7 @@ public class EventControl : MonoBehaviour {
     public int maxMineCount, badBound, normalBound, goodBound;
     public float timerStart;
 
+    public static Element[,] mineElements;
     public Text timerText;
     public Text bugCountText;
 
