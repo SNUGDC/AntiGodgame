@@ -17,6 +17,7 @@ public class EventControl : MonoBehaviour {
     private int bugCount = 0;
     private float timer;
     private bool gameEnd = false;
+    private int resultParameter = 0;
 
     private GameObject endObject;
 
@@ -86,26 +87,25 @@ public class EventControl : MonoBehaviour {
 
     private void OnGameEnd()
     {
-
-        Text resultText = endObject.transform.Find("Result").gameObject.GetComponentInChildren<Text>();
         GridControl.UncoverMines();
-        if (bugCount > 0 && bugCount <= badBound)
-        {
-            resultText.text = "BAD";
+        string txt;
+        if(bugCount > 0){
+            txt = bugCount <= badBound ? "BAD" : bugCount <= normalBound ? "NORMAL" : bugCount <= goodBound ? "GOOD" : bugCount <= maxMineCount ? "OVER";
+            resultParameter = bugCount <= badBound ? +3 : bugCount <= normalBound ? 0 : bugCount <= goodBound ? -3 : bugCount <= maxMineCount ? -5;
         }
-        else if (bugCount <= normalBound)
-        {
-            resultText.text = "NORMAL";
-        }
-        else if (bugCount <= goodBound)
-        {
-            resultText.text = "GOOD";
-        }
-        else if (bugCount <= maxMineCount)
-        {
-            resultText.text = "OVER";
-        }
+        SetResult(txt, resultParameter);
         endObject.SetActive(true);
+        ModifyProgrammerParameter(resultParameter);
+    }
+
+    private void ModifyProgrammerParameter(int param){
+        PlayerPref.SetInt("Programmer", PlayerPref.GeInt("Programmer") + param);
+    }
+
+    private void SetResult(string rsltTxt, int rsltPrm){
+        Text resultText = endObject.transform.Find("Result").gameObject.GetComponentInChildren<Text>();
+        resultText.text = rsltText;
+        resultParameter = rsltPrm;
     }
 
     public void TimerModify(float time)

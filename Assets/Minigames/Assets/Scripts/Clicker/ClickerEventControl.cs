@@ -11,6 +11,7 @@ public class ClickerEventControl : MonoBehaviour {
     private bool gameEnd = false;
     private float timer;
     private int count = 0;
+    private int resultParameter = 0;
 
     private Text timerText;
     private Text countText;
@@ -48,6 +49,12 @@ public class ClickerEventControl : MonoBehaviour {
         //TODO: Do something on game end
         Button btn = GameObject.Find("CtrlButton").GetComponent<Button>();
         btn.enabled = false;
+        //resultParameter =
+        ModifyArtParameter(resultParameter);
+    }
+
+    private void ModifyArtParameter(int resultParameter){
+        PlayerPrefs.SetInt("Art", PlayerPrefs.GetInt("Art") + resultParameter);
     }
 
     public void ModifyCount(int mdfy)

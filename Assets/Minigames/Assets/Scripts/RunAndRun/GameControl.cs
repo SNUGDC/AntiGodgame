@@ -22,6 +22,7 @@ public class GameControl : MonoBehaviour {
     private bool isTerrainMoveAvailable = true;
     private bool isTerrainOverlapped = false;
     private float overlapDistance;
+    private int resultParameter = 0;
 
     private void Awake()
     {
@@ -45,24 +46,39 @@ public class GameControl : MonoBehaviour {
             timer -= Time.deltaTime;
             if (isTerrainOverlapped)
             {
-                foreach(GameObject terrain in spawnedList)
-                {
-                    terrain.transform.position += new Vector3(overlapDistance, 0.0f, 0.0f);
-                }
-                terrainSpawnPoint += new Vector3(overlapDistance, 0.0f, 0.0f);
-                overlapDistance = 0.0f;
-                isTerrainOverlapped = false;
+                MoveTerrainOnOverlap();
             }
         }
         else 
         {
             timer = 0;
             isGameEnd = true;
+            ModifyPMParameter(resultParameter);
         }
         if (!isGameEnd)
         {
             SpawnTerrainWithTimeInterval();
         }
+    }
+
+    private void MoveTerrainOnOverlap(){
+        foreach(GameObject terrain in spawnedList)
+        {
+            terrain.transform.position += new Vector3(overlapDistance, 0.0f, 0.0f);
+        }
+        terrainSpawnPoint += new Vector3(overlapDistance, 0.0f, 0.0f);
+        overlapDistance = 0.0f;
+        isTerrainOverlapped = false;
+    }
+
+    private void SetResultParameter(string str){
+        if(str == "BAD"){
+
+        }
+    }
+
+    private void ModifyPMParameter(int param){
+        PlayerPref.SetInt("PM", PlayerPref.GetInt("PM") + param);
     }
 
     private void SpawnTerrainWithTimeInterval()
