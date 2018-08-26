@@ -12,11 +12,12 @@ public class UITextControl : MonoBehaviour {
     public Text runMeterText;
     public Text timerDecreaseText;
     public GameObject onHitText;
-    public GameObject result;
 
     private GameControl gc;
     private Character ch;
+    private CharacterPhysics chp;
     private float timer;
+    private float runmeter = 0.0f;
     private bool isCreatedText = false;
     private RectTransform canvasRect;
 
@@ -24,6 +25,7 @@ public class UITextControl : MonoBehaviour {
 	void Start () {
         gc = GetComponent<GameControl>();
         ch = GameObject.Find("Character").GetComponent<Character>();
+        chp = GameObject.Find("Character").transform.Find("Sprite").GetComponent<CharacterPhysics>();
         canvasRect = GameObject.Find("UICanvas").GetComponent<RectTransform>();
 
     }
@@ -32,11 +34,14 @@ public class UITextControl : MonoBehaviour {
     void Update()
     {
         timer = gc.GetTimer();
+        if(!chp.GetIsCharacterStopped() && !GameControl.isGameEnd){
+            runmeter += Time.deltaTime * runSpeedByMeterPerSec;
+        }
         debugText.text = Time.time.ToString();
         timerText.text = "TIMER: " + timer.ToString("N2");
         if (timer > 0)
         {
-            runMeterText.text = "RUN: " + (Time.time * runSpeedByMeterPerSec).ToString("N2") + "m";
+            runMeterText.text = "RUN: " + runmeter.ToString("N2") + "m";
         }
         if (ch.isHit && !isCreatedText)
         {
@@ -45,10 +50,6 @@ public class UITextControl : MonoBehaviour {
         if (!ch.isHit && isCreatedText)
         {
             isCreatedText = false;
-        }
-        if (GameControl.isGameEnd)
-        {
-            result.SetActive(true);
         }
     }
 
@@ -66,5 +67,8 @@ public class UITextControl : MonoBehaviour {
     public void SetIsCreatedText(bool setBool)
     {
         isCreatedText = setBool;
+    }
+    public float GetRunMeter(){
+        return runmeter;
     }
 }

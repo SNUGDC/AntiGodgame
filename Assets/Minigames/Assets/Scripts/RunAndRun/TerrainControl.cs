@@ -6,29 +6,24 @@ public class TerrainControl : MonoBehaviour {
 
     public static float moveSpeed = -0.15f;
 
-    public bool spawnObstacle = true;
     public float xDestroyBoundary;
     public float probSpawn, probStaticOrReactive;
     public GameObject[] obstacle;
+    public bool spawnObstacle = true;
 
-    private GameObject character;
     private GameObject characterSprite;
-    private Character ch;
-    private GameControl gc;
+    private TerrainOverlapControl toc;
     private Collider2D c2;
 
     // Use this for initialization
     void Start () {
-        character = GameObject.Find("Character");
-        characterSprite = character.transform.Find("Sprite").gameObject;
-        ch = character.GetComponent<Character>();
-        gc = GameObject.Find("GameControl").GetComponent<GameControl>();
+        characterSprite = GameObject.Find("Character").transform.Find("Sprite").gameObject;
+        toc = GameObject.Find("GameControl").GetComponent<TerrainOverlapControl>();
         c2 = transform.Find("CollideBox").GetComponent<Collider2D>();
-        if (spawnObstacle)
-        {
+        if(spawnObstacle){
             InstantiateObstacle();
         }
-        gc.AddElementOnSpawnedList(gameObject);
+        toc.AddElementOnSpawnedList(gameObject);
 	}
 
     private void InstantiateObstacle()
@@ -56,7 +51,7 @@ public class TerrainControl : MonoBehaviour {
 	void Update () {
         if (!GameControl.isGameEnd)
         {
-            if (gc.GetIsTerrainMoveAvailable())
+            if (toc.GetIsTerrainMoveAvailable())
             {
                 Move();
             }
@@ -65,13 +60,13 @@ public class TerrainControl : MonoBehaviour {
         {
             if (transform.position.x - c2.bounds.size.x / 2 < characterSprite.transform.position.x + 0.9f && transform.position.x - c2.bounds.size.x/2 > characterSprite.transform.position.x -0.9f)
             {
-                gc.SetIsTerrainOverlapped(true);
-                gc.SetOverlapDistance((characterSprite.transform.position.x + 0.9f) - (transform.position.x - c2.bounds.size.x / 2));
+                toc.SetIsTerrainOverlapped(true);
+                toc.SetOverlapDistance((characterSprite.transform.position.x + 0.9f) - (transform.position.x - c2.bounds.size.x / 2));
             }
         }
         if(transform.position.x < xDestroyBoundary + characterSprite.transform.position.x)
         {
-            gc.DeleteElementOnSpawnedList(gameObject);
+            toc.DeleteElementOnSpawnedList(gameObject);
             Destroy(gameObject);
         }
 	}

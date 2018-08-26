@@ -11,17 +11,11 @@ public class Character : MonoBehaviour {
 
     private UITextControl utc;
     private SpriteRenderer sr;
-    private CharacterPhysics cp;
-    private Ray ray;
-    private RaycastHit hit;
-    private bool isHeadingTerrain = false;
 
 	// Use this for initialization
 	void Start () {
         utc = GameObject.Find("GameControl").GetComponent<UITextControl>();
         sr = transform.Find("Sprite").GetComponent<SpriteRenderer>();
-        cp = GetComponent<CharacterPhysics>();
-        ray = new Ray(transform.position, Vector2.right);
     }
 	
 	// Update is called once per frame
@@ -35,21 +29,6 @@ public class Character : MonoBehaviour {
             }
         }
 	}
-
-    private void FixedUpdate()
-    {
-        if (Physics.Raycast(ray, out hit, 1.0f))
-        {
-            if (hit.transform.tag == "Enemy")
-            {
-                isHeadingTerrain = true;
-            }
-            else
-            {
-                isHeadingTerrain = false;
-            }
-        }
-    }
 
     private void Move()
     {
@@ -80,10 +59,5 @@ public class Character : MonoBehaviour {
     public bool GetIsInvincible()
     {
         return isInvincible;
-    }
-
-    public bool GetIsHeadingTerrain()
-    {
-        return isHeadingTerrain;
     }
 }

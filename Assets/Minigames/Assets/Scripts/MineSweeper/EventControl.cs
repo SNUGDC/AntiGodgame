@@ -16,7 +16,7 @@ public class EventControl : MonoBehaviour {
     private int mineCount = 0;
     private int bugCount = 0;
     private float timer;
-    private bool gameEnd = false;
+    private bool isGameEnd = false;
     private int resultParameter = 0;
 
     private GameObject endObject;
@@ -68,18 +68,13 @@ public class EventControl : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        timerText.text = timer.ToString() + "초";
+        timerText.text = timer.ToString("N2") + "초";
         bugCountText.text = "BUGS: " + bugCount.ToString() + "/" + maxMineCount.ToString();
-		if(timer > 0 && !gameEnd)
+		if(timer > 0 && !isGameEnd)
         {
             timer -= Time.deltaTime;
         }
         else
-        {
-            timer = 0;
-            gameEnd = true;
-        }
-        if (gameEnd)
         {
             OnGameEnd();
         }
@@ -87,24 +82,38 @@ public class EventControl : MonoBehaviour {
 
     private void OnGameEnd()
     {
+        timer = 0;
+        isGameEnd = true;
         GridControl.UncoverMines();
-        string txt;
-        if(bugCount > 0){
-            txt = bugCount <= badBound ? "BAD" : bugCount <= normalBound ? "NORMAL" : bugCount <= goodBound ? "GOOD" : bugCount <= maxMineCount ? "OVER";
-            resultParameter = bugCount <= badBound ? +3 : bugCount <= normalBound ? 0 : bugCount <= goodBound ? -3 : bugCount <= maxMineCount ? -5;
-        }
-        SetResult(txt, resultParameter);
+        SetResultParameter();
         endObject.SetActive(true);
         ModifyProgrammerParameter(resultParameter);
     }
 
+    private void SetResultParameter(){
+        if(bugCount > 0){
+            if(bugCount <= badBound){
+                SetResult("BAD", +3);
+            }
+            else if(bugCount <= normalBound){
+                SetResult("NORMAL", 0);
+            }
+            else if(bugCount <= goodBound){
+                SetResult("GOOD", -3);
+            }
+            else if(bugCount <= maxMineCount){
+                SetResult("OVER", -5);
+            }
+        }
+    }
+
     private void ModifyProgrammerParameter(int param){
-        PlayerPref.SetInt("Programmer", PlayerPref.GeInt("Programmer") + param);
+        PlayerPrefs.SetInt("Programmer", PlayerPrefs.GetInt("Programmer") + param);
     }
 
     private void SetResult(string rsltTxt, int rsltPrm){
         Text resultText = endObject.transform.Find("Result").gameObject.GetComponentInChildren<Text>();
-        resultText.text = rsltText;
+        resultText.text = rsltTxt;
         resultParameter = rsltPrm;
     }
 

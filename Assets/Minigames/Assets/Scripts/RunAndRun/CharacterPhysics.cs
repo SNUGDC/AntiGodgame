@@ -10,15 +10,17 @@ public class CharacterPhysics : MonoBehaviour {
     private Rigidbody2D rb;
     private Character character;
     private GameControl gc;
+    private TerrainOverlapControl toc;
     private Quaternion startQuat;
     private GameObject collidedTerrain;
-    private bool isHeadingTerrain = false;
+    private bool isCharacterStopped = false;
 
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
         character = transform.parent.GetComponent<Character>();
         gc = GameObject.Find("GameControl").GetComponent<GameControl>();
+        toc = GameObject.Find("GameControl").GetComponent<TerrainOverlapControl>();
         startQuat = transform.rotation;
     }
 	
@@ -36,7 +38,7 @@ public class CharacterPhysics : MonoBehaviour {
             }
             if (collidedTerrain != null && transform.position.y > collidedTerrain.transform.position.y + 5.0f)
             {
-                gc.SetIsTerrainMoveAvailable(true);
+                toc.SetIsTerrainMoveAvailable(true);
             }
         }
 	}
@@ -49,7 +51,7 @@ public class CharacterPhysics : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.CompareTag("Enemy"))
+        if (collision.transform.CompareTag("Enemy") || collision.transform.CompareTag("Terrain"))
         {
             collidedTerrain = collision.gameObject;
             if (!character.GetIsInvincible())
@@ -67,6 +69,9 @@ public class CharacterPhysics : MonoBehaviour {
         {
             isOnGround = true;
         }
+        if(collision.transform.CompareTag("Terrain")){
+            isCharacterStopped = true;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -76,10 +81,12 @@ public class CharacterPhysics : MonoBehaviour {
             isOnGround = false;
             collidedTerrain = null;
         }
+        if(collision.transform.CompareTag("Terrain")){
+            isCharacterStopped = false;
+        }
     }
 
-    public void SetIsHeadingTerrain(bool b)
-    {
-        isHeadingTerrain = b;
+    public bool GetIsCharacterStopped(){
+        return isCharacterStopped;
     }
 }
