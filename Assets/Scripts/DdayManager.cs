@@ -9,6 +9,7 @@ public class DdayManager : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
+        PlayerPrefs.SetInt("Day", 1);
         PlayerPrefs.SetInt("Dday", Dday);
 	}
 	

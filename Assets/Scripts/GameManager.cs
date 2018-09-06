@@ -13,17 +13,36 @@ public class GameManager : MonoBehaviour {
     public string sceneName;
 
     private ScheduleList scheduleList = new ScheduleList();
+    private EventList eventlist = new EventList();
     private string scenarioLabel;
     private int day;
+
+    private int _eventNum;
+    private int _endNum;
 
     // Use this for initialization
     void Start ()
     {
-        day = 13 - PlayerPrefs.GetInt("Dday");
+        day = PlayerPrefs.GetInt("Day");
         ParameterSetting();
-        scenarioLabel = sceneName + "Day" + day;
+        if(sceneName == "Start")
+        {
+            scenarioLabel = sceneName + "Day" + day;
+        }
+
+        else if(sceneName == "Event")
+        {
+            _eventNum = Random.Range(0, 20);
+            scenarioLabel = sceneName + _eventNum;
+        }
+
+        else
+        {
+            _endNum = Random.Range(0, 5);
+            scenarioLabel = sceneName + _endNum;
+        }
+
         CallDialogue();
-        Debug.Log(scheduleList.getSchedule(day));
 	}
 
     void ParameterSetting()
@@ -53,10 +72,24 @@ public class GameManager : MonoBehaviour {
 
         if (engine.IsEndScenario)
         {
-            Debug.Log(scheduleList.getSchedule(day));
-            SceneManager.LoadScene(scheduleList.getSchedule(day));
+            if(sceneName == "Start")
+            {
+                SceneManager.LoadScene(scheduleList.GetSchedule(day - 1));
+            }
+
+            else if(sceneName == "Event")
+            {
+                eventlist.GetEvent(_eventNum).UpdatePara();
+                SceneManager.LoadScene("EndDialogue");
+            }
+
+            else
+            {
+                SceneManager.LoadScene("Home");
+            }
         }
 
     }
 
+    
 }
