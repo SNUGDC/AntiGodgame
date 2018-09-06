@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f183272568e6f94382e3b59c0de76cd, type: 3}
+  m_Name: EndDialogue.project
+  m_EditorClassIdentifier: 
+  excelList: []
+  chapterDataList:
+  - chapterName: Boot
+    excelList:
+    - {fileID: 102900000, guid: a8aee5d888ca52a4abcea4cddfbb3307, type: 3}
+    excelDir: {fileID: 0}
+  checkWaitType: 0
+  checkWhiteSpaceEndOfCell: 1
+  checkTextCount: 1
+  scenarios: {fileID: 11400000, guid: 87894b3993dc7554fb854f285945944c, type: 2}
+  autoImportType: 0
+  convertPath: 
+  convertVersion: 0
+  isAutoUpdateVersionAfterConvert: 0
+  isAutoConvertOnImport: 0
+  customInportSpriteFolders:
+  - {fileID: 102900000, guid: 72bef8d8b68ae4846986e09d1e4ada78, type: 3}
+  - {fileID: 102900000, guid: 2921271f916be8f45915ec1938d5adca, type: 3}
+  - {fileID: 102900000, guid: f22d76338b46127408602e3fee2ca904, type: 3}
+  - {fileID: 102900000, guid: 37c14abd154d5c24ab3283daab9ac3b3, type: 3}
+  - {fileID: 102900000, guid: 482e69ba9c886024d99d0a83379555d9, type: 3}
+  customInportAudioFolders:
+  - {fileID: 102900000, guid: 88a37ac635d2b6641b6b21035663b131, type: 3}
+  - {fileID: 102900000, guid: cc50e77e20600984d9b0e226a8f1d342, type: 3}
+  - {fileID: 102900000, guid: 04a3ec1b63471e540948ba921b2bd94d, type: 3}
+  - {fileID: 102900000, guid: 260d5a1a35cfff44a868b1dc36dca7b1, type: 3}
+  customInportMovieFolders: []
+  quickImport: 0
+  parseFormula: 0

@@ -4,20 +4,69 @@ using UnityEngine;
 
 public class ScheduleList : MonoBehaviour {
 
-    private List<string> _schedules = new List<string>();
+    public List<string> _schedules;
 
     public ScheduleList()
     {
-        _schedules[0] = "Home";
-        _schedules[0] = "Home";
-        _schedules[0] = "Clicker";
-        _schedules[0] = "Home";
-        _schedules[0] = "Home";
-        _schedules[0] = "Home";
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+
+        _schedules.Add("Home");
+        _schedules.Add("EventDialogue");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("EventDialogue");
+        _schedules.Add("Home");
+        _schedules.Add("EventDialogue");
+
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
+        _schedules.Add("Home");
         /* rest of elements */
     }
 
-    public string getSchedule(int n)
+    public string GetSchedule(int n)
     {
         return _schedules[n];
     }
