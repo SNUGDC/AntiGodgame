@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScheduleList : MonoBehaviour {
 
-    public List<string> _schedules;
+    public List<string> _schedules = new List<string>();
 
     public ScheduleList()
     {
@@ -17,52 +17,14 @@ public class ScheduleList : MonoBehaviour {
         _schedules.Add("Home");
 
         _schedules.Add("Home");
+        _schedules.Add("SelectMiniGame");
         _schedules.Add("EventDialogue");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
+        _schedules.Add("SelectMiniGame");
         _schedules.Add("EventDialogue");
-        _schedules.Add("Home");
+        _schedules.Add("EndDialogue");
         _schedules.Add("EventDialogue");
 
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
+       
         /* rest of elements */
     }
 

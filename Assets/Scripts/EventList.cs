@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EventList : MonoBehaviour {
 
-    public static List<EventPara> _eventList;
+    public static List<EventPara> _eventList = new List<EventPara>();
     
     public EventList()
     {
