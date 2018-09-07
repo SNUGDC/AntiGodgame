@@ -16,7 +16,7 @@ public class TerrainSpawnControl : MonoBehaviour {
     private GameObject prevSpawnedObject;
 
     private void Start(){
-        spawningFrame = (int)(1 * -0.08f / TerrainControl.moveSpeed / Time.fixedDeltaTime);
+        spawningFrame = (int)(1 * -0.07f / TerrainControl.moveSpeed / Time.fixedDeltaTime);
     }
 
     private void Update(){

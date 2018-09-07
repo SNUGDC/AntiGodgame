@@ -16,6 +16,7 @@ public class GameControl : MonoBehaviour {
     private float timer;
     private int resultParameter = 0;
     private string resultText;
+    private bool isGameEndOver = false;
 
     private void Start()
     {
@@ -32,7 +33,17 @@ public class GameControl : MonoBehaviour {
             }
             else
             {
-                OnGameEnd();
+                if (!isGameEndOver)
+                {
+                    OnGameEnd();
+                }
+                else
+                {
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        ShowEndDialogue();
+                    }
+                }
             }
         }
     }
@@ -47,12 +58,11 @@ public class GameControl : MonoBehaviour {
         SetResultParameter();
         endObject.SetActive(true);
         ModifyPMParameter(resultParameter);
-        ShowEndDialogue();
+        isGameEndOver = true;
     }
 
     private void ShowEndDialogue()
     {
-        //Do something before load scene
         SceneManager.LoadScene("EndDialogue");
     }
 
