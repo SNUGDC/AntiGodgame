@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EventControl : MonoBehaviour {
 
@@ -100,6 +101,13 @@ public class EventControl : MonoBehaviour {
         endObject.SetActive(true);
         ModifyProgrammerParameter(resultParameter);
         isGameEndOver = true;
+        ShowEndDialogue();
+    }
+
+    private void ShowEndDialogue()
+    {
+        //Do something before load scene
+        SceneManager.LoadScene("EndDialogue");
     }
 
     private void SetResultParameter(){

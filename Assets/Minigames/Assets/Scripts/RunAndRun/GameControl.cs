@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour {
 
@@ -46,6 +47,13 @@ public class GameControl : MonoBehaviour {
         SetResultParameter();
         endObject.SetActive(true);
         ModifyPMParameter(resultParameter);
+        ShowEndDialogue();
+    }
+
+    private void ShowEndDialogue()
+    {
+        //Do something before load scene
+        SceneManager.LoadScene("EndDialogue");
     }
 
     private void SetResultParameter(){
