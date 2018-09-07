@@ -97,7 +97,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 
+=======
+    spriteID: 160b0a791b163c64bac14f8f6d650cb0
+>>>>>>> minigame
     vertices: []
     indices: 
     edges: []
