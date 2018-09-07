@@ -18,10 +18,10 @@ public class ButtonController : MonoBehaviour {
         int sound = PlayerPrefs.GetInt("Sound");
 
         PlayerPrefs.SetInt("Progress", progress + 5);
-        PlayerPrefs.SetInt("PM", pm + 5);
-        PlayerPrefs.SetInt("Programmer", programmer + 5);
-        PlayerPrefs.SetInt("Art", art + 5);
-        PlayerPrefs.SetInt("Sound", sound + 5);
+        PlayerPrefs.SetInt("PM", pm + 1);
+        PlayerPrefs.SetInt("Programmer", programmer + 1);
+        PlayerPrefs.SetInt("Art", art + 1);
+        PlayerPrefs.SetInt("Sound", sound + 1);
 
         if (CheckEnding() || day + 1 == PlayerPrefs.GetInt("DDay"))
         {

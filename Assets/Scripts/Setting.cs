@@ -11,10 +11,10 @@ public class Setting : MonoBehaviour {
         PlayerPrefs.SetInt("Day",1);
         PlayerPrefs.SetInt("DDay", DDay);
         PlayerPrefs.SetInt("Progress", 0);
-        PlayerPrefs.SetInt("PM", 100);
-        PlayerPrefs.SetInt("Programmer", 100);
-        PlayerPrefs.SetInt("Art", 100);
-        PlayerPrefs.SetInt("Sound", 100);
+        PlayerPrefs.SetInt("PM", 50);
+        PlayerPrefs.SetInt("Programmer", 50);
+        PlayerPrefs.SetInt("Art", 50);
+        PlayerPrefs.SetInt("Sound", 50);
     }
 	
 	// Update is called once per frame
