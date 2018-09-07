@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class TerrainControl : MonoBehaviour {
 
-    public static float moveSpeed = -0.15f;
+    public static float moveSpeed;
 
+    public float moveFactor;
     public float xDestroyBoundary;
     public float probSpawn, probStaticOrReactive;
     public GameObject[] obstacle;
@@ -17,6 +18,7 @@ public class TerrainControl : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        moveSpeed = -moveFactor * Time.fixedDeltaTime;
         characterSprite = GameObject.Find("Character").transform.Find("Sprite").gameObject;
         toc = GameObject.Find("GameControl").GetComponent<TerrainOverlapControl>();
         c2 = transform.Find("CollideBox").GetComponent<Collider2D>();
@@ -49,22 +51,22 @@ public class TerrainControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (!GameControl.isGameEnd)
+        if (!GameControl.isGameEnd && GameControl.isGameStart)
         {
             if (toc.GetIsTerrainMoveAvailable())
             {
                 Move();
             }
         }
-        if(transform.position.y + c2.bounds.size.y/2 > characterSprite.transform.position.y - 0.9f && transform.position.y - c2.bounds.size.y/2 < characterSprite.transform.position.y + 0.9f)
+        if (transform.position.y + c2.bounds.size.y / 2 > characterSprite.transform.position.y - 0.9f && transform.position.y - c2.bounds.size.y / 2 < characterSprite.transform.position.y + 0.9f)
         {
-            if (transform.position.x - c2.bounds.size.x / 2 < characterSprite.transform.position.x + 0.9f && transform.position.x - c2.bounds.size.x/2 > characterSprite.transform.position.x -0.9f)
+            if (transform.position.x - c2.bounds.size.x / 2 < characterSprite.transform.position.x + 0.9f && transform.position.x - c2.bounds.size.x / 2 > characterSprite.transform.position.x - 0.9f)
             {
                 toc.SetIsTerrainOverlapped(true);
                 toc.SetOverlapDistance((characterSprite.transform.position.x + 0.9f) - (transform.position.x - c2.bounds.size.x / 2));
             }
         }
-        if(transform.position.x < xDestroyBoundary + characterSprite.transform.position.x)
+        if (transform.position.x < xDestroyBoundary + characterSprite.transform.position.x)
         {
             toc.DeleteElementOnSpawnedList(gameObject);
             Destroy(gameObject);

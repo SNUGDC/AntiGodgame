@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class Element : MonoBehaviour {
+public class Element : MonoBehaviour, IPointerDownHandler {
 
     public bool mine;
 
     public Sprite[] emptyTextures;
     public Sprite mineTexture;
     public Sprite markTexture;
+    public Sprite mistakeTexture;
     public Sprite defaultTexture;
 
     private SpriteRenderer sr;
@@ -34,41 +36,40 @@ public class Element : MonoBehaviour {
         }
 	}
 
-    // Update is called once per frame
-    void Update ()
+    public void OnPointerDown(PointerEventData peData)
     {
         if (ec.GetTimer() > 0 && ec.GetBugCount() < ec.maxMineCount)
         {
-            if (Input.GetMouseButtonUp(0) && !marked)
+            if (peData.pointerId == -1)
             {
-                mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                if (mousePosition.x > x - 0.5f && mousePosition.x < x + 0.5f && mousePosition.y > y - 0.5f && mousePosition.y < y + 0.5f)
-                {
-                    OnLeftMouseButtonClicked();
-                }
+                OnLeftMouseButtonClicked();
             }
-            if (Input.GetMouseButtonUp(1) && IsCovered())
+            else if (peData.pointerId == -2)
             {
-                mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                if (mousePosition.x > x - 0.5f && mousePosition.x < x + 0.5f && mousePosition.y > y - 0.5f && mousePosition.y < y + 0.5f)
-                {
-                    OnRightMouseButtonClicked();
-                }
+                OnRightMouseButtonClicked();
+            }
+            if (GridControl.IsFinished())
+            {
+                EventControl.isGameEnd = true;
             }
         }
     }
 
     private void OnLeftMouseButtonClicked()
     {
-        if (mine)
+        if (mine && !marked)
         {
-            if (ec.GetTimer() > 0)
+            if(sr.sprite != mistakeTexture)
             {
-                ec.TimerModify(-2.0f);
+                if (ec.GetTimer() > 0)
+                {
+                    ec.TimerModify(-2.0f);
+                }
+                sr.sprite = mistakeTexture;
+                ec.ClickedBugCountUp();
             }
-            print("you lose");
         }
-        else
+        else if(!marked)
         {
             LoadTexture(GridControl.AdjacentMines(x, y));
 
@@ -83,25 +84,29 @@ public class Element : MonoBehaviour {
 
     private void OnRightMouseButtonClicked()
     {
-        if (!marked)
+        if(sr.sprite != mistakeTexture)
         {
-            if (mine)
+            if (!marked)
             {
-                ec.BugCountUp();
+                if (mine)
+                {
+                    ec.BugCountUp();
+                    ec.ClickedBugCountUp();
+                }
+                sr.sprite = markTexture;
+                marked = true;
             }
-            sr.sprite = markTexture;
-            marked = true;
-        }
-        else
-        {
-            if (mine)
+            else
             {
-                ec.BugCountDown();
+                if (mine)
+                {
+                    ec.BugCountDown();
+                    ec.ClickedBugCountDown();
+                }
+                sr.sprite = defaultTexture;
+                marked = false;
             }
-            sr.sprite = defaultTexture;
-            marked = false;
         }
-        
     }
 
     public void LoadTexture(int adjacentCount)
@@ -118,6 +123,6 @@ public class Element : MonoBehaviour {
 
     public bool IsCovered()
     {
-        return GetComponent<SpriteRenderer>().sprite.name == "default" || GetComponent<SpriteRenderer>().sprite.name == "mark";
+        return GetComponent<SpriteRenderer>().sprite.name == "mine_button";
     }
 }
