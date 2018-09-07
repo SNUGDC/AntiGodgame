@@ -56,6 +56,13 @@ public class ClickerEventControl : MonoBehaviour {
                 {
                     OnGameEnd();
                 }
+                else
+                {
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        ShowEndDialogue();
+                    }
+                }
             }
         }
 	}
@@ -69,7 +76,6 @@ public class ClickerEventControl : MonoBehaviour {
         endObject.SetActive(true);
         DecreaseArtParameter(resultParameter);
         isGameEndOver = true;
-        ShowEndDialogue();
     }
 
     private void ShowEndDialogue()
