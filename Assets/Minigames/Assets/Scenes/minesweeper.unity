@@ -5009,11 +5009,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 913158588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eed88f5fb90ca98478db11b52bbfffc0, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f9e377e3910d404c897af5724d5e572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStartText: {fileID: 111681123}
-  gameStartImage: {fileID: 1646891625}
 --- !u!1 &915259678
 GameObject:
   m_ObjectHideFlags: 0
