@@ -68,7 +68,7 @@ public class UITextControl : MonoBehaviour {
     public void InstantiateText()
     {
         isCreatedText = true;
-        Instantiate(timerDecreaseText, new Vector3(timerText.transform.position.x - 20.0f, timerText.transform.position.y, 0.0f), Quaternion.identity).rectTransform.SetParent(GameObject.Find("UICanvas").transform);
+        Instantiate(timerDecreaseText, new Vector3(timerText.transform.position.x - 40.0f, timerText.transform.position.y, 0.0f), Quaternion.identity).rectTransform.SetParent(GameObject.Find("UICanvas").transform);
     }
 
     private IEnumerator GameStart()
