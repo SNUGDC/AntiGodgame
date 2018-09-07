@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 88ff8267a3743c140906c871c23d43e1
@@ -15,9 +15,30 @@ EditorBuildSettings:
     path: Assets/Scenes/StartDialogue.unity
     guid: 5bbad79b356c3004d8e54a44199fe163
   - enabled: 1
+    path: Assets/Scenes/EventDialogue.unity
+    guid: 152bbd2d974d2834f905f89ad1d29b43
+  - enabled: 1
+    path: Assets/Scenes/SelectMiniGame.unity
+    guid: 2ccffd87eb8bdf54a92bb9f6b6c1c2e9
+  - enabled: 1
+    path: Assets/Scenes/WorkDialogue.unity
+    guid: 23c99da165595f244916ad5cfa8d7fb6
+  - enabled: 1
+    path: Assets/Scenes/EndDialogue.unity
+    guid: 9011d02b72e9b4c41bb342d027395e3f
+  - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: f9e2bf4f606899b4f9a940e0a625df05
   - enabled: 1
-    path: Assets/Minigames/Assets/Scenes/Clicker.unity
+    path: Assets/Minigames/Assets/Scenes/clicker.unity
     guid: cf9e8e5724d13f643a492abc2a4e87b6
+  - enabled: 1
+    path: Assets/Minigames/Assets/Scenes/minesweeper.unity
+    guid: 336c0d644d5518743afe38d85300ae03
+  - enabled: 1
+    path: Assets/Minigames/Assets/Scenes/runandrun.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 523b06847cb96d940861bbbedc258d0e
   m_configObjects: {}
