@@ -52,13 +52,14 @@ public class GameControl : MonoBehaviour {
         timer -= Time.deltaTime;
     }
 
-    private void OnGameEnd(){
+    private void OnGameEnd()
+    {
+        isGameEndOver = true;
         timer = 0;
         isGameEnd = true;
         SetResultParameter();
         endObject.SetActive(true);
         ModifyPMParameter(resultParameter);
-        isGameEndOver = true;
     }
 
     private void ShowEndDialogue()

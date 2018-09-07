@@ -69,13 +69,12 @@ public class ClickerEventControl : MonoBehaviour {
 
     private void OnGameEnd()
     {
-        //TODO: Do something on game end
+        isGameEndOver = true;
         Button btn = GameObject.Find("CtrlButton").GetComponent<Button>();
         btn.enabled = false;
         SetResultParameter();
         endObject.SetActive(true);
         DecreaseArtParameter(resultParameter);
-        isGameEndOver = true;
     }
 
     private void ShowEndDialogue()

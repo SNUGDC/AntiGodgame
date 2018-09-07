@@ -101,13 +101,13 @@ public class EventControl : MonoBehaviour {
 
     private void OnGameEnd()
     {
+        isGameEndOver = true;
         timer = 0;
         isGameEnd = true;
         GridControl.UncoverMines();
         SetResultParameter();
         endObject.SetActive(true);
         ModifyProgrammerParameter(resultParameter);
-        isGameEndOver = true;
     }
 
     private void ShowEndDialogue()
