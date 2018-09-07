@@ -11,9 +11,9 @@ public class ScheduleList : MonoBehaviour {
         _schedules.Add("Home");
         _schedules.Add("Home");
         _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
-        _schedules.Add("Home");
+        _schedules.Add("Runandrun");
+        _schedules.Add("Minesweeper");
+        _schedules.Add("Clicker");
         _schedules.Add("Home");
 
         _schedules.Add("Home");

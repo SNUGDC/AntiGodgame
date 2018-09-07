@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour {
             _endNum = Random.Range(0, 5);
             scenarioLabel = sceneName + _endNum;
         }
-
+        
         CallDialogue();
 	}
 
