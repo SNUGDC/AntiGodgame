@@ -89,19 +89,25 @@ public class EventControl : MonoBehaviour {
             {
                 OnGameEnd();
             }
+            else
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    ShowEndDialogue();
+                }
+            }
         }
 	}
 
     private void OnGameEnd()
     {
+        isGameEndOver = true;
         timer = 0;
         isGameEnd = true;
         GridControl.UncoverMines();
         SetResultParameter();
         endObject.SetActive(true);
         ModifyProgrammerParameter(resultParameter);
-        isGameEndOver = true;
-        ShowEndDialogue();
     }
 
     private void ShowEndDialogue()

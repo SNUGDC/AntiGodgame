@@ -20,11 +20,13 @@ public class Element : MonoBehaviour, IPointerDownHandler {
     private int x;
     private int y;
     private Vector3 mousePosition;
+    private AudioSource explodeAudio;
 
     // Use this for initialization
     void Awake () {
         sr = GetComponent<SpriteRenderer>();
         ec = GameObject.Find("Grid").GetComponent<EventControl>();
+        explodeAudio = GetComponent<AudioSource>();
         //Random gerneration of mine
         mine = Random.value < 0.15;
         x = (int)transform.position.x;
@@ -67,6 +69,7 @@ public class Element : MonoBehaviour, IPointerDownHandler {
                 }
                 sr.sprite = mistakeTexture;
                 ec.ClickedBugCountUp();
+                explodeAudio.Play();
             }
         }
         else if(!marked)

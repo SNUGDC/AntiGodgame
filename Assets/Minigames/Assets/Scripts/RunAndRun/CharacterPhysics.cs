@@ -14,14 +14,16 @@ public class CharacterPhysics : MonoBehaviour {
     private Quaternion startQuat;
     private GameObject collidedTerrain;
     private bool isCharacterStopped = false;
+    private AudioSource jumpAudio;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         rb = GetComponent<Rigidbody2D>();
         character = transform.parent.GetComponent<Character>();
         gc = GameObject.Find("GameControl").GetComponent<GameControl>();
         toc = GameObject.Find("GameControl").GetComponent<TerrainOverlapControl>();
         startQuat = transform.rotation;
+        jumpAudio = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -47,6 +49,7 @@ public class CharacterPhysics : MonoBehaviour {
     {
         isOnGround = false;
         rb.velocity = new Vector2(0, 1.0f) * jumpFactor;
+        jumpAudio.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

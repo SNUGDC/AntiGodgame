@@ -38,13 +38,15 @@ public class TerrainControl : MonoBehaviour {
             if (randomFactor2 < probStaticOrReactive)
             {
                 spawnedObstacle = Instantiate(obstacle[0], gameObject.transform.position, Quaternion.identity);
+                spawnedObstacle.transform.parent = gameObject.transform;
+                spawnedObstacle.transform.localPosition = new Vector3(0.0f, 5.25f, 0.0f);
             }
             else
             {
                 spawnedObstacle = Instantiate(obstacle[1], gameObject.transform.position, Quaternion.identity);
+                spawnedObstacle.transform.parent = gameObject.transform;
+                spawnedObstacle.transform.localPosition = new Vector3(0.0f, 4.6f, 0.0f);
             }
-            spawnedObstacle.transform.parent = gameObject.transform;
-            spawnedObstacle.transform.localPosition = new Vector3(0.0f, 4.5f, 0.0f);
             print(spawnedObstacle.name + "is spawned under " + gameObject.name);
         }
     }

@@ -23,18 +23,23 @@ public class UITextControl : MonoBehaviour {
     private RectTransform canvasRect;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         gc = GetComponent<GameControl>();
         ch = GameObject.Find("Character").GetComponent<Character>();
         chp = GameObject.Find("Character").transform.Find("Sprite").GetComponent<CharacterPhysics>();
         canvasRect = GameObject.Find("UICanvas").GetComponent<RectTransform>();
         gameStartText.text = "";
+        timer = gc.GetTimer();
         StartCoroutine(GameStart());
     }
 
     // Update is called once per frame
     void Update()
     {
+        //debugText.text = Time.time.ToString();
+        timerText.text = ((int)timer).ToString("D2") + ":" + ((int)((timer % 1) * 100)).ToString("D2") + "초";
+        runMeterText.text = runmeter.ToString("N2") + "m";
         if (GameControl.isGameStart)
         {
             timer = gc.GetTimer();
@@ -42,11 +47,9 @@ public class UITextControl : MonoBehaviour {
             {
                 runmeter += Time.deltaTime * runSpeedByMeterPerSec;
             }
-            debugText.text = Time.time.ToString();
-            timerText.text = ((int)timer).ToString("D2") + ":" + ((int)((timer % 1) * 100)).ToString("D2") + "초";
+            
             if (timer > 0)
             {
-                runMeterText.text = runmeter.ToString("N2") + "m";
             }
             if (ch.isHit && !isCreatedText)
             {
@@ -65,7 +68,7 @@ public class UITextControl : MonoBehaviour {
     public void InstantiateText()
     {
         isCreatedText = true;
-        Instantiate(timerDecreaseText, new Vector3(timerText.transform.position.x - 20.0f, timerText.transform.position.y, 0.0f), Quaternion.identity).rectTransform.SetParent(GameObject.Find("UICanvas").transform);
+        Instantiate(timerDecreaseText, new Vector3(timerText.transform.position.x - 40.0f, timerText.transform.position.y, 0.0f), Quaternion.identity).rectTransform.SetParent(GameObject.Find("UICanvas").transform);
     }
 
     private IEnumerator GameStart()
