@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adec8322bfda2804ea1a3ef35187c21a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dday: 12
+  DDay: 0
 --- !u!4 &544543523
 Transform:
   m_ObjectHideFlags: 0

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Setting : MonoBehaviour {
 
-    public int Dday;
+    public int DDay;
 
 	// Use this for initialization
 	void Start () {
-        PlayerPrefs.SetInt("Dday", Dday);
+        PlayerPrefs.SetInt("Day",1);
+        PlayerPrefs.SetInt("DDay", DDay);
         PlayerPrefs.SetInt("Progress", 100);
         PlayerPrefs.SetInt("PM", 100);
         PlayerPrefs.SetInt("Programmer", 100);
