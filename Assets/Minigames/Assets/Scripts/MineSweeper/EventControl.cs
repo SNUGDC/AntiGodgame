@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EventControl : MonoBehaviour {
+
+    public static bool isGameStart = false;
+    public static bool isGameEnd = false;
 
     public int maxMineCount, badBound, normalBound, goodBound;
     public float timerStart;
@@ -11,21 +15,19 @@ public class EventControl : MonoBehaviour {
     public static Element[,] mineElements;
     public Text timerText;
     public Text bugCountText;
+    public GameObject endObject;
 
     private Element[,] elements;
     private int mineCount = 0;
     private int bugCount = 0;
+    private int clickedBugCount = 0;
     private float timer;
-    private bool isGameEnd = false;
     private int resultParameter = 0;
-
-    private GameObject endObject;
+    private bool isGameEndOver = false;
 
 	// Use this for initialization
 	void Start () {
         timer = timerStart;
-        endObject = GameObject.Find("GameEnd");
-        endObject.SetActive(false);
         elements = GridControl.elements;
         if(mineCount != maxMineCount)
         {
@@ -70,13 +72,23 @@ public class EventControl : MonoBehaviour {
     void Update () {
         timerText.text = timer.ToString("N2") + "초";
         bugCountText.text = "BUGS: " + bugCount.ToString() + "/" + maxMineCount.ToString();
-		if(timer > 0 && !isGameEnd)
+        if (!isGameEnd && isGameStart)
         {
-            timer -= Time.deltaTime;
+            if (timer > 0)
+            {
+                timer -= Time.deltaTime;
+            }
+            if(bugCount == maxMineCount || timer < 0 || clickedBugCount == maxMineCount)
+            {
+                isGameEnd = true;
+            }
         }
-        else
+        else if(isGameEnd)
         {
-            OnGameEnd();
+            if (!isGameEndOver)
+            {
+                OnGameEnd();
+            }
         }
 	}
 
@@ -88,10 +100,18 @@ public class EventControl : MonoBehaviour {
         SetResultParameter();
         endObject.SetActive(true);
         ModifyProgrammerParameter(resultParameter);
+        isGameEndOver = true;
+        ShowEndDialogue();
+    }
+
+    private void ShowEndDialogue()
+    {
+        //Do something before load scene
+        SceneManager.LoadScene("EndDialogue");
     }
 
     private void SetResultParameter(){
-        if(bugCount > 0){
+        if(bugCount >= 0){
             if(bugCount <= badBound){
                 SetResult("BAD", +3);
             }
@@ -136,6 +156,16 @@ public class EventControl : MonoBehaviour {
     {
         bugCount--;
     } 
+
+    public void ClickedBugCountUp()
+    {
+        clickedBugCount++;
+    }
+
+    public void ClickedBugCountDown()
+    {
+        clickedBugCount--;
+    }
 
     public int GetBugCount()
     {

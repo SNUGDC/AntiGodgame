@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour {
 
     public static bool isGameEnd = false;
+    public static bool isGameStart = false;
 
     public float timerStart;
     public GameObject endObject;
@@ -22,13 +24,16 @@ public class GameControl : MonoBehaviour {
 
     private void Update()
     {
-        if(timer > 0)
+        if (isGameStart)
         {
-            OnGameNotEnd();
-        }
-        else 
-        {
-            OnGameEnd();
+            if (timer > 0)
+            {
+                OnGameNotEnd();
+            }
+            else
+            {
+                OnGameEnd();
+            }
         }
     }
 
@@ -42,6 +47,13 @@ public class GameControl : MonoBehaviour {
         SetResultParameter();
         endObject.SetActive(true);
         ModifyPMParameter(resultParameter);
+        ShowEndDialogue();
+    }
+
+    private void ShowEndDialogue()
+    {
+        //Do something before load scene
+        SceneManager.LoadScene("EndDialogue");
     }
 
     private void SetResultParameter(){
