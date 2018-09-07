@@ -27,11 +27,31 @@ public class EventPara : MonoBehaviour
         int art_value = PlayerPrefs.GetInt("Art");
         int sound_value = PlayerPrefs.GetInt("Sound");
 
-        PlayerPrefs.SetInt("Progress", progress_value - _progress);
-        PlayerPrefs.SetInt("PM", PM_value - _PM);
-        PlayerPrefs.SetInt("Programmer", program_value - _program);
-        PlayerPrefs.SetInt("Art", art_value - _art);
-        PlayerPrefs.SetInt("Sound", sound_value - _sound);
+        if(program_value - _progress <= 0)
+            PlayerPrefs.SetInt("Progress", 0);
+        else
+            PlayerPrefs.SetInt("Progress", progress_value - _progress);
+
+        if(PM_value - _PM <= 0)
+            PlayerPrefs.SetInt("PM", 0);
+        else 
+            PlayerPrefs.SetInt("PM", PM_value - _PM);
+
+        if(program_value - _program <= 0)
+            PlayerPrefs.SetInt("Programmer", 0);
+        else 
+            PlayerPrefs.SetInt("Programmer", program_value - _program);
+
+        if(art_value - _art <= 0)
+            PlayerPrefs.SetInt("Art", 0);
+        else
+            PlayerPrefs.SetInt("Art", art_value - _art);
+
+        if(sound_value - _sound <= 0)
+            PlayerPrefs.SetInt("Sound", sound_value - _sound);
+
+        else
+            PlayerPrefs.SetInt("Sound", sound_value - _sound);
     }
 
 }

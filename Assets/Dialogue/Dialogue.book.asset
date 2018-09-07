@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 8
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -4846,7 +4846,47 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 13
-      debugIndex: 13
+      debugIndex: 14
+      strings:
+      - PauseScenario
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:StartDay8
+    type: 1
+    textLength: 377
+    headerRow: 0
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
       strings:
       - 
       - "\uD558\uC218"
@@ -4855,15 +4895,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "[\uC218\uCE58/\uC120\uD0DD\uC9C0]"
-      - "\uC5B4\uB514 \uBCF4\uC790... \uAE30\uD68D \uBA85\uC138\uC5D0 \uB530\uB974\uBA74,
-        \uD604\uC7AC \uAC8C\uC784 \uC9C4\uCC99\uC740 [\uC9C4\uCC99\uB3C4 \uC218\uCE58]%\uB9CC\uD07C
-        \uC644\uB8CC\uB418\uC5C8\uC5B4."
+      - 
+      - "\uC5B4\uB514 \uBCF4\uC790\u2026 30%\uC815\uB3C4 \uBC16\uC5D0 \uC548 \uB410\uC796\uC544?"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 14
-      debugIndex: 14
+    - rowIndex: 2
+      debugIndex: 2
       strings:
       - 
       - "\uC7A5\uAE30\uC120"
@@ -4872,14 +4910,14 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "(\uC218\uCE58 < 0.33)"
+      - 
       - "(\uD734\uC6B0... \uB2E4\uD589\uD788\uB3C4 \uC9C0\uAE08\uAE4C\uC9C0\uC758
         \uACF5\uC791\uC774 \uC720\uD6A8\uD588\uB098\uBCF4\uAD70. )"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 15
-      debugIndex: 15
+    - rowIndex: 3
+      debugIndex: 3
       strings:
       - 
       - "\uC18C\uB3C4\uC120"
@@ -4888,13 +4926,76 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "(\uC218\uCE58 < 0.33)"
+      - 
       - "\uACA8\uC6B0? \uC77C\uC8FC\uC77C \uB3D9\uC548 \uB05D\uB0BC \uC218 \uC788\uB098?"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 16
-      debugIndex: 16
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB3D9\uC544\uB9AC\uC6D0\uB4E4\uC758 \uC791\uC5C5 \uD6A8\uC728\uC774 3\uBC30
+        \uC0C1\uC2B9\uD55C \uB290\uB08C\uC774\uB2E4..."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Day8-1
+    type: 1
+    textLength: 185
+    headerRow: 0
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - 
+      - "\uD558\uC218"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5B4\uB514 \uBCF4\uC790.. 70% \uC774\uC0C1 \uC9C4\uD589\uB410\uB124!"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
       strings:
       - 
       - "\uC7A5\uAE30\uC120"
@@ -4903,47 +5004,14 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "(0.33 < \uC218\uCE58 < 0.67)"
-      - "(\uC57D\uAC04 \uBD88\uC548\uD558\uAE34 \uD558\uC9C0\uB9CC, \uC774 \uC815\uB3C4\uBA74
-        \uC120\uBC29\uD588\uB2E4. )"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 17
-      debugIndex: 17
-      strings:
       - 
-      - "\uC774\uC218\uBD09"
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "(0.33 < \uC218\uCE58 < 0.67)"
-      - "\uD760, \uC0DD\uAC01\uBCF4\uB2E4 \uC800\uC870\uD558\uAE34 \uD558\uC9C0\uB9CC
-        \uC870\uAE08 \uBB34\uB9AC\uD558\uBA74 \uB0A9\uAE30\uB294 \uAC04\uC2E0\uD788
-        \uB9DE\uCD9C \uC218 \uC788\uC744\uC9C0\uB3C4..."
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 18
-      debugIndex: 18
-      strings:
-      - 
-      - "\uC7A5\uAE30\uC120"
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "(\uC218\uCE58 > 0.67)"
       - "(\uB760\uC6A9? \uADF8\uB807\uAC8C\uB098 \uB9CE\uC774 \uAC1C\uBC1C\uB418\uC5C8\uB2E4\uACE0?
         )"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 19
-      debugIndex: 19
+    - rowIndex: 3
+      debugIndex: 3
       strings:
       - 
       - "\uC774\uACE0\uB974"
@@ -4952,13 +5020,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "(\uC218\uCE58 > 0.67)"
+      - 
       - "\uC640\uC6B0! \uC815\uB9D0 \uC5BC\uB9C8 \uC548 \uB0A8\uC558\uAD70\uC694!"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 20
-      debugIndex: 20
+    - rowIndex: 4
+      debugIndex: 4
       strings:
       - 
       - "\uD558\uC218"
@@ -4973,8 +5041,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 21
-      debugIndex: 21
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - 
@@ -4983,46 +5051,143 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "(\uC218\uCE58 < 0.33)"
-      - "\uB3D9\uC544\uB9AC\uC6D0\uB4E4\uC758 \uC791\uC5C5 \uD6A8\uC728\uC774 3\uBC30
-        \uC0C1\uC2B9\uD55C \uB290\uB08C\uC774\uB2E4..."
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 22
-      debugIndex: 22
-      strings:
       - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "(0.33 < \uC218\uCE58 < 0.67)"
-      - "\uB3D9\uC544\uB9AC\uC6D0\uB4E4\uC758 \uC791\uC5C5 \uD6A8\uC728\uC774 2\uBC30
-        \uC0C1\uC2B9\uD55C \uB290\uB08C\uC774\uB2E4..."
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 23
-      debugIndex: 23
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "(\uC218\uCE58 > 0.67)"
       - "\uB3D9\uC544\uB9AC\uC6D0\uB4E4\uC758 \uC791\uC5C5 \uD6A8\uC728\uC774 1.5\uBC30
         \uC0C1\uC2B9\uD55C \uB290\uB08C\uC774\uB2E4..."
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 24
-      debugIndex: 24
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Day8-2
+    type: 1
+    textLength: 207
+    headerRow: 0
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - 
+      - "\uD558\uC218"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5B4\uB514 \uBCF4\uC790.. \uC774\uC81C \uC808\uBC18 \uC815\uB3C4 \uD55C
+        \uAC83 \uAC19\uB124."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uC57D\uAC04 \uBD88\uC548\uD558\uAE34 \uD558\uC9C0\uB9CC, \uC774 \uC815\uB3C4\uBA74
+        \uC120\uBC29\uD588\uB2E4. )"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - "\uC774\uC218\uBD09"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uD760, \uC0DD\uAC01\uBCF4\uB2E4 \uC800\uC870\uD558\uAE34 \uD558\uC9C0\uB9CC
+        \uC870\uAE08 \uBB34\uB9AC\uD558\uBA74 \uB0A9\uAE30\uB294 \uAC04\uC2E0\uD788
+        \uB9DE\uCD9C \uC218 \uC788\uC744\uC9C0\uB3C4..."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB3D9\uC544\uB9AC\uC6D0\uB4E4\uC758 \uC791\uC5C5 \uD6A8\uC728\uC774 2\uBC30
+        \uC0C1\uC2B9\uD55C \uB290\uB08C\uC774\uB2E4..."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Day8-3
+    type: 1
+    textLength: 209
+    headerRow: 0
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
       strings:
       - 
       - "\uD558\uC218"
@@ -5036,8 +5201,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 25
-      debugIndex: 25
+    - rowIndex: 2
+      debugIndex: 2
       strings:
       - 
       - "\uC18C\uB3C4\uC120"
@@ -5051,8 +5216,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 26
-      debugIndex: 26
+    - rowIndex: 3
+      debugIndex: 3
       strings:
       - 
       - "\uD558\uC218"
@@ -5067,8 +5232,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 27
-      debugIndex: 27
+    - rowIndex: 4
+      debugIndex: 4
       strings:
       - 
       - "\uC774\uC218\uBD09"
@@ -5082,8 +5247,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 28
-      debugIndex: 28
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - "\uC18C\uB3C4\uC120"
@@ -5097,8 +5262,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 29
-      debugIndex: 29
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - 
       - "\uC774\uC218\uBD09"
@@ -5114,8 +5279,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 30
-      debugIndex: 30
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - 
       - "\uC18C\uB3C4\uC120"
@@ -5130,8 +5295,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 31
-      debugIndex: 31
+    - rowIndex: 8
+      debugIndex: 8
       strings:
       - 
       - "\uC774\uACE0\uB974"
@@ -5145,8 +5310,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 32
-      debugIndex: 32
+    - rowIndex: 9
+      debugIndex: 9
       strings:
       - 
       - "\uC7A5\uAE30\uC120"
@@ -5160,8 +5325,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 33
-      debugIndex: 33
+    - rowIndex: 10
+      debugIndex: 10
       strings:
       - 
       - "\uC7A5\uAE30\uC120"
@@ -5176,8 +5341,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 34
-      debugIndex: 34
+    - rowIndex: 11
+      debugIndex: 11
       strings:
       - 
       - "\uC7A5\uAE30\uC120"
@@ -5192,16 +5357,16 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 35
-      debugIndex: 35
+    - rowIndex: 12
+      debugIndex: 12
       strings:
       - EndScenario
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    name: Assets/Dialogue/Dialogue.xls:StartDay8
+    name: Assets/Dialogue/Dialogue.xls:Day8End
     type: 1
-    textLength: 1140
+    textLength: 365
     headerRow: 0
     entityIndexTbl: 
     entityDataList: []
@@ -12573,21 +12738,87 @@ MonoBehaviour:
       debugIndex: 13
       strings:
       - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 14
+      strings:
+      - PauseScenario
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 15
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:StartDay8
+    type: 1
+    textLength: 377
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - 
       - "\uD558\uC218"
       - 
       - 
       - 
       - 
       - 
-      - "[\uC218\uCE58/\uC120\uD0DD\uC9C0]"
-      - "\uC5B4\uB514 \uBCF4\uC790... \uAE30\uD68D \uBA85\uC138\uC5D0 \uB530\uB974\uBA74,
-        \uD604\uC7AC \uAC8C\uC784 \uC9C4\uCC99\uC740 [\uC9C4\uCC99\uB3C4 \uC218\uCE58]%\uB9CC\uD07C
-        \uC644\uB8CC\uB418\uC5C8\uC5B4."
+      - 
+      - "\uC5B4\uB514 \uBCF4\uC790\u2026 30%\uC815\uB3C4 \uBC16\uC5D0 \uC548 \uB410\uC796\uC544?"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 14
-      debugIndex: 14
+    - rowIndex: 2
+      debugIndex: 2
       strings:
       - 
       - "\uC7A5\uAE30\uC120"
@@ -12596,14 +12827,14 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "(\uC218\uCE58 < 0.33)"
+      - 
       - "(\uD734\uC6B0... \uB2E4\uD589\uD788\uB3C4 \uC9C0\uAE08\uAE4C\uC9C0\uC758
         \uACF5\uC791\uC774 \uC720\uD6A8\uD588\uB098\uBCF4\uAD70. )"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 15
-      debugIndex: 15
+    - rowIndex: 3
+      debugIndex: 3
       strings:
       - 
       - "\uC18C\uB3C4\uC120"
@@ -12612,13 +12843,74 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "(\uC218\uCE58 < 0.33)"
+      - 
       - "\uACA8\uC6B0? \uC77C\uC8FC\uC77C \uB3D9\uC548 \uB05D\uB0BC \uC218 \uC788\uB098?"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 16
-      debugIndex: 16
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB3D9\uC544\uB9AC\uC6D0\uB4E4\uC758 \uC791\uC5C5 \uD6A8\uC728\uC774 3\uBC30
+        \uC0C1\uC2B9\uD55C \uB290\uB08C\uC774\uB2E4..."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Day8-1
+    type: 1
+    textLength: 185
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - 
+      - "\uD558\uC218"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5B4\uB514 \uBCF4\uC790.. 70% \uC774\uC0C1 \uC9C4\uD589\uB410\uB124!"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
       strings:
       - 
       - "\uC7A5\uAE30\uC120"
@@ -12627,47 +12919,14 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "(0.33 < \uC218\uCE58 < 0.67)"
-      - "(\uC57D\uAC04 \uBD88\uC548\uD558\uAE34 \uD558\uC9C0\uB9CC, \uC774 \uC815\uB3C4\uBA74
-        \uC120\uBC29\uD588\uB2E4. )"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 17
-      debugIndex: 17
-      strings:
       - 
-      - "\uC774\uC218\uBD09"
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "(0.33 < \uC218\uCE58 < 0.67)"
-      - "\uD760, \uC0DD\uAC01\uBCF4\uB2E4 \uC800\uC870\uD558\uAE34 \uD558\uC9C0\uB9CC
-        \uC870\uAE08 \uBB34\uB9AC\uD558\uBA74 \uB0A9\uAE30\uB294 \uAC04\uC2E0\uD788
-        \uB9DE\uCD9C \uC218 \uC788\uC744\uC9C0\uB3C4..."
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 18
-      debugIndex: 18
-      strings:
-      - 
-      - "\uC7A5\uAE30\uC120"
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "(\uC218\uCE58 > 0.67)"
       - "(\uB760\uC6A9? \uADF8\uB807\uAC8C\uB098 \uB9CE\uC774 \uAC1C\uBC1C\uB418\uC5C8\uB2E4\uACE0?
         )"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 19
-      debugIndex: 19
+    - rowIndex: 3
+      debugIndex: 3
       strings:
       - 
       - "\uC774\uACE0\uB974"
@@ -12676,13 +12935,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "(\uC218\uCE58 > 0.67)"
+      - 
       - "\uC640\uC6B0! \uC815\uB9D0 \uC5BC\uB9C8 \uC548 \uB0A8\uC558\uAD70\uC694!"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 20
-      debugIndex: 20
+    - rowIndex: 4
+      debugIndex: 4
       strings:
       - 
       - "\uD558\uC218"
@@ -12697,8 +12956,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 21
-      debugIndex: 21
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - 
@@ -12707,46 +12966,139 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "(\uC218\uCE58 < 0.33)"
-      - "\uB3D9\uC544\uB9AC\uC6D0\uB4E4\uC758 \uC791\uC5C5 \uD6A8\uC728\uC774 3\uBC30
-        \uC0C1\uC2B9\uD55C \uB290\uB08C\uC774\uB2E4..."
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 22
-      debugIndex: 22
-      strings:
       - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "(0.33 < \uC218\uCE58 < 0.67)"
-      - "\uB3D9\uC544\uB9AC\uC6D0\uB4E4\uC758 \uC791\uC5C5 \uD6A8\uC728\uC774 2\uBC30
-        \uC0C1\uC2B9\uD55C \uB290\uB08C\uC774\uB2E4..."
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 23
-      debugIndex: 23
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "(\uC218\uCE58 > 0.67)"
       - "\uB3D9\uC544\uB9AC\uC6D0\uB4E4\uC758 \uC791\uC5C5 \uD6A8\uC728\uC774 1.5\uBC30
         \uC0C1\uC2B9\uD55C \uB290\uB08C\uC774\uB2E4..."
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 24
-      debugIndex: 24
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Day8-2
+    type: 1
+    textLength: 207
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - 
+      - "\uD558\uC218"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC5B4\uB514 \uBCF4\uC790.. \uC774\uC81C \uC808\uBC18 \uC815\uB3C4 \uD55C
+        \uAC83 \uAC19\uB124."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - 
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "(\uC57D\uAC04 \uBD88\uC548\uD558\uAE34 \uD558\uC9C0\uB9CC, \uC774 \uC815\uB3C4\uBA74
+        \uC120\uBC29\uD588\uB2E4. )"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - "\uC774\uC218\uBD09"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uD760, \uC0DD\uAC01\uBCF4\uB2E4 \uC800\uC870\uD558\uAE34 \uD558\uC9C0\uB9CC
+        \uC870\uAE08 \uBB34\uB9AC\uD558\uBA74 \uB0A9\uAE30\uB294 \uAC04\uC2E0\uD788
+        \uB9DE\uCD9C \uC218 \uC788\uC744\uC9C0\uB3C4..."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uB3D9\uC544\uB9AC\uC6D0\uB4E4\uC758 \uC791\uC5C5 \uD6A8\uC728\uC774 2\uBC30
+        \uC0C1\uC2B9\uD55C \uB290\uB08C\uC774\uB2E4..."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Dialogue/Dialogue.xls:Day8-3
+    type: 1
+    textLength: 209
+    headerRow: 0
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
       strings:
       - 
       - "\uD558\uC218"
@@ -12760,8 +13112,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 25
-      debugIndex: 25
+    - rowIndex: 2
+      debugIndex: 2
       strings:
       - 
       - "\uC18C\uB3C4\uC120"
@@ -12775,8 +13127,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 26
-      debugIndex: 26
+    - rowIndex: 3
+      debugIndex: 3
       strings:
       - 
       - "\uD558\uC218"
@@ -12791,8 +13143,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 27
-      debugIndex: 27
+    - rowIndex: 4
+      debugIndex: 4
       strings:
       - 
       - "\uC774\uC218\uBD09"
@@ -12806,8 +13158,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 28
-      debugIndex: 28
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - "\uC18C\uB3C4\uC120"
@@ -12821,8 +13173,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 29
-      debugIndex: 29
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - 
       - "\uC774\uC218\uBD09"
@@ -12838,8 +13190,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 30
-      debugIndex: 30
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - 
       - "\uC18C\uB3C4\uC120"
@@ -12854,8 +13206,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 31
-      debugIndex: 31
+    - rowIndex: 8
+      debugIndex: 8
       strings:
       - 
       - "\uC774\uACE0\uB974"
@@ -12869,8 +13221,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 32
-      debugIndex: 32
+    - rowIndex: 9
+      debugIndex: 9
       strings:
       - 
       - "\uC7A5\uAE30\uC120"
@@ -12884,8 +13236,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 33
-      debugIndex: 33
+    - rowIndex: 10
+      debugIndex: 10
       strings:
       - 
       - "\uC7A5\uAE30\uC120"
@@ -12900,8 +13252,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 34
-      debugIndex: 34
+    - rowIndex: 11
+      debugIndex: 11
       strings:
       - 
       - "\uC7A5\uAE30\uC120"
@@ -12916,16 +13268,16 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 35
-      debugIndex: 35
+    - rowIndex: 12
+      debugIndex: 12
       strings:
       - EndScenario
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    name: Assets/Dialogue/Dialogue.xls:StartDay8
+    name: Assets/Dialogue/Dialogue.xls:Day8End
     type: 1
-    textLength: 1140
+    textLength: 365
     headerRow: 0
   - rows:
     - rowIndex: 0

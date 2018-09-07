@@ -25,8 +25,23 @@ public class GameManager : MonoBehaviour {
     {
         day = PlayerPrefs.GetInt("Day");
         ParameterSetting();
+
+        
         if(sceneName == "Start")
         {
+            if (day >= 8 && day <= 21)
+            {
+                int random = Random.Range(0, 2);
+                if (random == 0)
+                {
+                    SceneManager.LoadScene("EventDialogue");
+                }
+                else
+                {
+                    SceneManager.LoadScene("WorkDialogue");
+                }
+            }
+
             scenarioLabel = sceneName + "Day" + day;
         }
 
@@ -36,10 +51,29 @@ public class GameManager : MonoBehaviour {
             scenarioLabel = sceneName + _eventNum;
         }
 
-        else
+        else if(sceneName == "Work")
         {
             _endNum = Random.Range(0, 5);
             scenarioLabel = sceneName + _endNum;
+        }
+
+        else
+        {
+            if(day >= 4 && day <=6)
+            {
+                scenarioLabel = "EndDay" + day;
+            }
+            
+            else if(day>=23 && day<=26)
+            {
+                scenarioLabel = "EndDay" + day;
+            }
+
+            else
+            {
+                _endNum = Random.Range(0, 5);
+                scenarioLabel = sceneName + _endNum;
+            }
         }
         
         CallDialogue();
@@ -56,7 +90,8 @@ public class GameManager : MonoBehaviour {
 
     public void CallDialogue()
     {
-        StartCoroutine(StartDialogue());
+        if (day == 8) StartCoroutine(Day22());
+        else StartCoroutine(StartDialogue());
     }
 
     IEnumerator StartDialogue()
@@ -83,6 +118,11 @@ public class GameManager : MonoBehaviour {
                 SceneManager.LoadScene("EndDialogue");
             }
 
+            else if(sceneName == "Work")
+            {
+                SceneManager.LoadScene("SelectMiniGame");
+            }
+
             else
             {
                 SceneManager.LoadScene("Home");
@@ -91,5 +131,43 @@ public class GameManager : MonoBehaviour {
 
     }
 
-    
+    IEnumerator Day22()
+    {
+        engine.JumpScenario("StartDay22");
+
+        while(!engine.IsPausingScenario)
+        {
+            yield return 0;
+        }
+
+        if (PlayerPrefs.GetInt("Progress") < 30)
+        {
+            engine.JumpScenario("Day22-1");
+
+            while (!engine.IsEndScenario) yield return 0;
+        }
+
+        else if (PlayerPrefs.GetInt("Progress") > 70)
+        {
+            engine.JumpScenario("Day22-2");
+
+            while (!engine.IsEndScenario) yield return 0;
+        }
+
+        else
+        {
+            engine.JumpScenario("Day22-3");
+
+            while (!engine.IsEndScenario) yield return 0;
+        }
+
+        engine.JumpScenario("Day22End");
+
+        while (!engine.IsEndScenario) yield return 0;
+
+        if (engine.IsEndScenario)
+            SceneManager.LoadScene(scheduleList.GetSchedule(day - 1));
+
+    }
+
 }

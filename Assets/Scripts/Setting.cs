@@ -10,7 +10,7 @@ public class Setting : MonoBehaviour {
 	void Start () {
         PlayerPrefs.SetInt("Day",1);
         PlayerPrefs.SetInt("DDay", DDay);
-        PlayerPrefs.SetInt("Progress", 100);
+        PlayerPrefs.SetInt("Progress", 0);
         PlayerPrefs.SetInt("PM", 100);
         PlayerPrefs.SetInt("Programmer", 100);
         PlayerPrefs.SetInt("Art", 100);

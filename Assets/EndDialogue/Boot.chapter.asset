@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 8
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -47,6 +47,14 @@ MonoBehaviour:
       strings:
       - "\uC7A5\uAE30\uC120"
       - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - JGS.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -55,6 +63,14 @@ MonoBehaviour:
       strings:
       - "\uC774\uC218\uBD09"
       - "\uC774\uC218\uBD09"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - LSB.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -63,6 +79,14 @@ MonoBehaviour:
       strings:
       - "\uC18C\uB3C4\uC120"
       - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - SDS.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -71,6 +95,14 @@ MonoBehaviour:
       strings:
       - "\uC774\uACE0\uB974"
       - "\uC774\uACE0\uB974"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - IGR.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -79,12 +111,20 @@ MonoBehaviour:
       strings:
       - "\uD558\uC218"
       - "\uD558\uC218"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - HS.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/EndDialogue/EndDialogue.xls:Character
     type: 1
-    textLength: 182
+    textLength: 216
     headerRow: 0
   - rows:
     - rowIndex: 0
