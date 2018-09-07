@@ -89,6 +89,13 @@ public class EventControl : MonoBehaviour {
             {
                 OnGameEnd();
             }
+            else
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    ShowEndDialogue();
+                }
+            }
         }
 	}
 
@@ -101,7 +108,6 @@ public class EventControl : MonoBehaviour {
         endObject.SetActive(true);
         ModifyProgrammerParameter(resultParameter);
         isGameEndOver = true;
-        ShowEndDialogue();
     }
 
     private void ShowEndDialogue()
