@@ -9,7 +9,6 @@ public class CallDialogue : MonoBehaviour {
     public AdvEngine engine;
     public string scenarioLabel;
     public string nextScene;
-    public DdayManager ddayManager;
 
     // コリジョンにぶつかった
     public void Call()
