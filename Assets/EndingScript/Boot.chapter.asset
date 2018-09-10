@@ -42,9 +42,89 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - "\uC7A5\uAE30\uC120"
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - JGS.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - "\uC774\uC218\uBD09"
+      - "\uC774\uC218\uBD09"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - LSB.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - "\uC18C\uB3C4\uC120"
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - SDS.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - "\uC774\uACE0\uB974"
+      - "\uC774\uACE0\uB974"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - IGR.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - "\uD558\uC218"
+      - "\uD558\uC218"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - HS.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/EndingScript/EndingScript.xls:Character
     type: 1
-    textLength: 154
+    textLength: 216
     headerRow: 0
   - rows:
     - rowIndex: 0
@@ -275,9 +355,99 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - "\uC7A5\uAE30\uC120"
+      - 
+      - Bgm
+      - charNewbie.mp3
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - "\uD558\uC218"
+      - 
+      - Bgm
+      - charDesign.mp3
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - "\uC18C\uB3C4\uC120"
+      - 
+      - Bgm
+      - charProgramming.mp3
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - "\uC774\uC218\uBD09"
+      - 
+      - Bgm
+      - charArt.mp3
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - "\uC774\uACE0\uB974"
+      - 
+      - Bgm
+      - charSound.mp3
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - "\uD3C9\uBC94"
+      - 
+      - Bgm
+      - usual.mp3
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - "\uC7A5\uC1A1\uACE1"
+      - 
+      - Bgm
+      - requiem.mp3
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings:
+      - "\uC81C\uBB3C"
+      - 
+      - Bgm
+      - sacrificeEnd.mp3
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings:
+      - "\uC885\uB9D0"
+      - 
+      - Bgm
+      - worldEnd.mp3
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/EndingScript/EndingScript.xls:Sound
     type: 1
-    textLength: 37
+    textLength: 206
     headerRow: 0
   - rows:
     - rowIndex: 0
