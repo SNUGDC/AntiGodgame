@@ -256,7 +256,7 @@ namespace Utage
 				target.GetComponent<Renderer>().material.mainTexture = null;
 			}
 		}
-#elif UNITY_WEBGL
+#elif UNITY_2018_2_OR_NEWER || UNITY_WEBGL
 		IEnumerator CoPlayMobileMovie(string path)
 		{
 			isPlaying = false;
