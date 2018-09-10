@@ -23,7 +23,6 @@ public class ScheduleList : MonoBehaviour {
         _schedules.Add("EventDialogue");
         _schedules.Add("EndDialogue");
         _schedules.Add("EventDialogue");
-        _schedules.Add("Home");
 
         _schedules.Add("Home");
         _schedules.Add("SelectMiniGame");
@@ -34,10 +33,10 @@ public class ScheduleList : MonoBehaviour {
         _schedules.Add("EventDialogue");
 
         _schedules.Add("SelectMiniGame");
-        _schedules.Add("EventDialogue");
         _schedules.Add("SelectMiniGame");
-        _schedules.Add("EventDialogue");
-        _schedules.Add("EndDialogue");
+        _schedules.Add("SelectMiniGame");
+        _schedules.Add("SelectMiniGame");
+        _schedules.Add("SelectMiniGame");
         _schedules.Add("EventDialogue");
 
        
