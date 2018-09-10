@@ -141,6 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   engine: {fileID: 456724002}
+  backGround: {fileID: 990699083}
 --- !u!4 &5630675
 Transform:
   m_ObjectHideFlags: 0
@@ -455,10 +456,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0.00015629646
-    width: 1
-    height: 0.99968743
+    x: 0.00010989274
+    y: 0
+    width: 0.99978024
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -2239,7 +2240,7 @@ GameObject:
   - component: {fileID: 990699085}
   - component: {fileID: 990699084}
   m_Layer: 0
-  m_Name: "\uBC1C\uD45C\uC7A5 \uB9AC\uD130\uCE6D"
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3461,10 +3462,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0.00015629646
-    width: 1
-    height: 0.99968743
+    x: 0.00010989274
+    y: 0
+    width: 0.99978024
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
