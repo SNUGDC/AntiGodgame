@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
     public List<Slider> sliders;
     public AdvEngine engine;
     public string sceneName;
+    public Text dayNum;
 
     private ScheduleList scheduleList = new ScheduleList();
     private EventList eventlist = new EventList();
@@ -26,8 +27,10 @@ public class GameManager : MonoBehaviour {
         day = PlayerPrefs.GetInt("Day");
         ParameterSetting();
 
-        
-        if(sceneName == "Start")
+        dayNum.text = day.ToString();
+
+
+        if (sceneName == "Start")
         {
             if (day >= 8 && day <= 21)
             {
@@ -90,7 +93,7 @@ public class GameManager : MonoBehaviour {
 
     public void CallDialogue()
     {
-        if (day == 8) StartCoroutine(Day22());
+        if (sceneName == "Start" && day == 22) StartCoroutine(Day22());
         else StartCoroutine(StartDialogue());
     }
 
