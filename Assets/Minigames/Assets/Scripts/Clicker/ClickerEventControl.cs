@@ -32,6 +32,9 @@ public class ClickerEventControl : MonoBehaviour {
         countText = GameObject.Find("CountText").GetComponent<Text>();
         countText.text = "HITS: ";
         result = endObject.transform.Find("Result").gameObject;
+        isGameEnd = false;
+        isGameStart = false;
+        isGameEndOver = false;
 	}
 	
 	// Update is called once per frame

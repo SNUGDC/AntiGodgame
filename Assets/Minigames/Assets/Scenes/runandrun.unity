@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -278,8 +278,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 45
+    m_Font: {fileID: 12800000, guid: a726e15f75397b84a9da175a846cdd2d, type: 3}
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -431,6 +431,25 @@ Prefab:
       propertyPath: m_Size.y
       value: 6.43
       objectReference: {fileID: 0}
+    - target: {fileID: 212875173508688594, guid: 160e313b8efcb5345a50ded1b34ab1eb,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: be29ca71e97ca97499e90f661e23d62e,
+        type: 3}
+    - target: {fileID: 61265634435845158, guid: 160e313b8efcb5345a50ded1b34ab1eb,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632246652598088, guid: 160e313b8efcb5345a50ded1b34ab1eb, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632246652598088, guid: 160e313b8efcb5345a50ded1b34ab1eb, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 160e313b8efcb5345a50ded1b34ab1eb, type: 2}
   m_IsPrefabAsset: 0
@@ -505,7 +524,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: -10}
+  m_LocalPosition: {x: 0, y: 2, z: -10}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 330775639}
@@ -989,6 +1008,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1434814966 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1907268368393558, guid: a51c92fe96e4f1c48834e4a4e75b7272,
+    type: 2}
+  m_PrefabInternal: {fileID: 1890480203}
+--- !u!61 &1434814967
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1434814966}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.028042316}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.76, y: 2.08}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.76, y: 2.0239153}
+  m_EdgeRadius: 0
 --- !u!1 &1467227057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,12 +1334,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 45
+    m_Font: {fileID: 12800000, guid: a726e15f75397b84a9da175a846cdd2d, type: 3}
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
-    m_MaxSize: 45
+    m_MaxSize: 50
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1547,7 +1596,22 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 212853363999761542, guid: a51c92fe96e4f1c48834e4a4e75b7272,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300008, guid: 8b2a75dec3e1582428ddc9dba32a651b,
+        type: 3}
+    - target: {fileID: 4216785218147930, guid: a51c92fe96e4f1c48834e4a4e75b7272, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4216785218147930, guid: a51c92fe96e4f1c48834e4a4e75b7272, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 58738333919145968, guid: a51c92fe96e4f1c48834e4a4e75b7272, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: a51c92fe96e4f1c48834e4a4e75b7272, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1928476384

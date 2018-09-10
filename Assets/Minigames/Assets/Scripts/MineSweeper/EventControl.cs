@@ -29,6 +29,9 @@ public class EventControl : MonoBehaviour {
 	void Start () {
         timer = timerStart;
         elements = GridControl.elements;
+        isGameStart = false;
+        isGameEnd = false;
+        isGameEndOver = false;
         if(mineCount != maxMineCount)
         {
             ModifyMineCount();

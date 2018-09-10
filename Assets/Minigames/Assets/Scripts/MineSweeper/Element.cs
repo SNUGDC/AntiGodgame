@@ -93,7 +93,10 @@ public class Element : MonoBehaviour, IPointerDownHandler {
                     ec.BugCountUp();
                     ec.ClickedBugCountUp();
                 }
-                sr.sprite = markTexture;
+                if (sr.sprite == defaultTexture)
+                {
+                    sr.sprite = markTexture;
+                }
                 marked = true;
             }
             else

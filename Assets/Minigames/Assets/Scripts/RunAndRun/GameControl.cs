@@ -20,6 +20,8 @@ public class GameControl : MonoBehaviour {
     private void Start()
     {
         timer = timerStart;
+        isGameEnd = false;
+        isGameStart = false;
     }
 
     private void Update()
