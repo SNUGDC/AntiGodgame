@@ -7,8 +7,9 @@ public class ButtonController : MonoBehaviour {
 
     public string nextScene;
 
-	public void StartNextDay()
+    public void StartNextDay()
     {
+
         int day = PlayerPrefs.GetInt("Day");
 
         int progress = PlayerPrefs.GetInt("Progress");
@@ -17,11 +18,22 @@ public class ButtonController : MonoBehaviour {
         int art = PlayerPrefs.GetInt("Art");
         int sound = PlayerPrefs.GetInt("Sound");
 
-        PlayerPrefs.SetInt("Progress", progress + 5);
-        PlayerPrefs.SetInt("PM", pm + 1);
-        PlayerPrefs.SetInt("Programmer", programmer + 1);
-        PlayerPrefs.SetInt("Art", art + 1);
-        PlayerPrefs.SetInt("Sound", sound + 1);
+        if (day % 2 == 0)
+        {
+            PlayerPrefs.SetInt("PM", pm + 1);
+            PlayerPrefs.SetInt("Programmer", programmer + 1);
+            PlayerPrefs.SetInt("Art", art + 1);
+            PlayerPrefs.SetInt("Sound", sound + 1);
+            PlayerPrefs.SetInt("Progress", progress + 5);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("PM", pm + 2);
+            PlayerPrefs.SetInt("Programmer", programmer + 2);
+            PlayerPrefs.SetInt("Art", art + 2);
+            PlayerPrefs.SetInt("Sound", sound + 2);
+            PlayerPrefs.SetInt("Progress", progress + 6);
+        }
 
         if (CheckEnding() || day + 1 == PlayerPrefs.GetInt("DDay"))
         {
@@ -39,6 +51,28 @@ public class ButtonController : MonoBehaviour {
     public void LoadScene()
     {
         SceneManager.LoadScene(nextScene);
+    }
+
+    public void LoadGame()
+    {
+        SceneManager.LoadScene("StartDialogue");
+    }
+
+    public void NewGame()
+    {
+        PlayerPrefs.SetInt("Day", 1);
+        PlayerPrefs.SetInt("Progress", 0);
+        PlayerPrefs.SetInt("PM", 20);
+        PlayerPrefs.SetInt("Programmer", 20);
+        PlayerPrefs.SetInt("Art", 20);
+        PlayerPrefs.SetInt("Sound", 20);
+
+        SceneManager.LoadScene("StartDialogue");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 
     public bool CheckEnding()
